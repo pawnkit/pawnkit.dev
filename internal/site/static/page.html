@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{.Description}}">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; style-src 'self'; script-src 'self'; connect-src 'self'">
+  <title>{{.Title}} · PawnKit</title>
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="/">PawnKit</a>
+    <nav aria-label="Main navigation">
+      <a href="/guides/getting-started.html">Get started</a>
+      <a href="/search.html">Search</a>
+      <a href="https://github.com/pawnkit">GitHub</a>
+    </nav>
+  </header>
+  <main id="content">
+    {{if .Entry.Source}}<p class="provenance">From <a href="{{.Entry.Repository}}">{{.Entry.Source}}</a> at {{.Entry.Version}}{{if .Entry.RawURL}} · <a href="{{.Entry.RawURL}}">Raw file</a>{{end}}</p>{{end}}
+    {{.Content}}
+  </main>
+  <footer>PawnKit is community-made tooling for Pawn, open.mp, and SA-MP projects.</footer>
+  <script src="/assets/search.js" defer></script>
+</body>
+</html>

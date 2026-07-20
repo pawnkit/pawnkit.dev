@@ -1,0 +1,36 @@
+{
+  "sources": [
+    {
+      "name": "pawnkit-spec schemas",
+      "repository": "https://github.com/pawnkit/pawnkit-spec",
+      "ref": "ab0c7545c91626ff81b24a33654c1eb2bb552045",
+      "path": "pawnkit-spec/schemas",
+      "source_path": "schemas",
+      "kind": "schema"
+    },
+    {
+      "name": "pawnkit-spec RFCs",
+      "repository": "https://github.com/pawnkit/pawnkit-spec",
+      "ref": "ab0c7545c91626ff81b24a33654c1eb2bb552045",
+      "path": "pawnkit-spec/rfcs",
+      "source_path": "rfcs",
+      "kind": "rfc"
+    },
+    {
+      "name": "pawn-api",
+      "repository": "https://github.com/pawnkit/pawn-api",
+      "ref": "v0.1.0",
+      "path": "pawn-api/data/generated",
+      "source_path": "data/generated",
+      "kind": "api"
+    },
+    {
+      "name": "pawnlint rules",
+      "repository": "https://github.com/pawnkit/pawnlint",
+      "ref": "v1.0.2",
+      "path": "pawnlint/docs/rules",
+      "source_path": "docs/rules",
+      "kind": "rule"
+    }
+  ]
+}

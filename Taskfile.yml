@@ -1,0 +1,28 @@
+version: "3"
+
+tasks:
+  build:
+    cmds:
+      - go run ./cmd/site
+
+  test:
+    cmds:
+      - go test ./...
+
+  lint:
+    cmds:
+      - golangci-lint run ./...
+
+  security:
+    cmds:
+      - go tool govulncheck ./...
+
+  check:
+    cmds:
+      - test -z "$(gofumpt -l .)"
+      - go test ./...
+      - go vet ./...
+      - golangci-lint run ./...
+      - go tool govulncheck ./...
+      - node --check internal/site/static/search.js
+      - go run ./cmd/site
