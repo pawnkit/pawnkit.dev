@@ -3,7 +3,7 @@
     {
       "name": "pawnkit-spec schemas",
       "repository": "https://github.com/pawnkit/pawnkit-spec",
-      "ref": "ab0c7545c91626ff81b24a33654c1eb2bb552045",
+      "ref": "v0.1.0",
       "path": "pawnkit-spec/schemas",
       "source_path": "schemas",
       "kind": "schema"
@@ -11,7 +11,7 @@
     {
       "name": "pawnkit-spec RFCs",
       "repository": "https://github.com/pawnkit/pawnkit-spec",
-      "ref": "ab0c7545c91626ff81b24a33654c1eb2bb552045",
+      "ref": "v0.1.0",
       "path": "pawnkit-spec/rfcs",
       "source_path": "rfcs",
       "kind": "rfc"
