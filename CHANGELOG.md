@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.1 - 2026-07-23
+
+- Publish the first tested command-line toolchain as the latest release set.
+- Update standards to `pawnkit-spec v0.1.12`.
+
 ## 0.2.0 - 2026-07-23
 
 - Publish tested release sets at stable and latest URLs.

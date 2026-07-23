@@ -63,7 +63,7 @@ func TestBuildAndSearchIndex(t *testing.T) {
 	if _, err := os.Stat(filepath.Join("dist", "pawn-release-set", "v1", "schema.json")); err != nil {
 		t.Fatal(err)
 	}
-	releaseSet, err := os.ReadFile(filepath.Join("dist", "release-sets", "preview-2026-07-23.json"))
+	releaseSet, err := os.ReadFile(filepath.Join("dist", "release-sets", "toolchain-preview-2026-07-23.json"))
 	if err != nil {
 		t.Fatal(err)
 	}
