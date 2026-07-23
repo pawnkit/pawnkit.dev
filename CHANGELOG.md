@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.0 - 2026-07-23
+
+- Publish API confidence and review status.
+- Update standards to `pawnkit-spec v0.1.17`.
+- Update API data to `pawn-api v0.19.0`.
+
 ## 0.2.1 - 2026-07-23
 
 - Publish the first tested command-line toolchain as the latest release set.

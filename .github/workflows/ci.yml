@@ -25,13 +25,13 @@ jobs:
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
         with:
           repository: pawnkit/pawnkit-spec
-          ref: v0.1.12
+          ref: v0.1.17
           path: sources/pawnkit-spec
           persist-credentials: false
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
         with:
           repository: pawnkit/pawn-api
-          ref: v0.18.0
+          ref: v0.19.0
           path: sources/pawn-api
           persist-credentials: false
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
