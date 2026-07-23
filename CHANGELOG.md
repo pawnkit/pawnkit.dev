@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.0 - 2026-07-23
+
+- Publish tested release sets at stable and latest URLs.
+- Update standards to `pawnkit-spec v0.1.10`.
+
 ## 0.1.1 - 2026-07-23
 
 - Publish schemas and RFCs from `pawnkit-spec v0.1.8`.

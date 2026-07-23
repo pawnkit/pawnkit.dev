@@ -42,6 +42,7 @@ type source struct {
 	Path       string `json:"path"`
 	SourcePath string `json:"source_path"`
 	Kind       string `json:"kind"`
+	Latest     string `json:"latest,omitempty"`
 }
 
 type entry struct {
@@ -160,6 +161,12 @@ func loadConfig(name string) (config, error) {
 		if !safeRelativePath(item.Path) || !safeRelativePath(item.SourcePath) || strings.ContainsAny(item.Kind, "/\\") || strings.ContainsAny(item.Ref, "/\\") {
 			return config{}, fmt.Errorf("source %q has an unsafe path, kind, or ref", item.Name)
 		}
+		if item.Kind == "release-set" && !safeRelativePath(item.Latest) {
+			return config{}, fmt.Errorf("release-set source %q needs a safe latest file", item.Name)
+		}
+		if item.Kind != "release-set" && item.Latest != "" {
+			return config{}, fmt.Errorf("source %q uses latest outside a release set", item.Name)
+		}
 		repository, err := url.Parse(item.Repository)
 		if err != nil || repository.Scheme != "https" || repository.Host != "github.com" {
 			return config{}, fmt.Errorf("source %q needs an https GitHub repository URL", item.Name)
@@ -189,6 +196,7 @@ func buildSources(output, sourceRoot string, sources []source) ([]entry, error) 
 			return nil, fmt.Errorf("source %s is not a directory", item.Name)
 		}
 
+		foundLatest := false
 		err = filepath.WalkDir(root, func(name string, file fs.DirEntry, walkErr error) error {
 			if walkErr != nil || file.IsDir() {
 				return walkErr
@@ -233,6 +241,19 @@ func buildSources(output, sourceRoot string, sources []source) ([]entry, error) 
 				}
 				publicRawURL = schemaURL
 			}
+			if item.Kind == "release-set" {
+				releasePath := path.Join("release-sets", relative)
+				if err := writeFile(filepath.Join(output, filepath.FromSlash(releasePath)), data); err != nil {
+					return err
+				}
+				publicRawURL = "/" + releasePath
+				if relative == item.Latest {
+					if err := writeFile(filepath.Join(output, "release-sets", "latest.json"), data); err != nil {
+						return err
+					}
+					foundLatest = true
+				}
+			}
 
 			title := titleFromName(relative)
 			if ext == ".md" {
@@ -273,6 +294,9 @@ func buildSources(output, sourceRoot string, sources []source) ([]entry, error) 
 		})
 		if err != nil {
 			return nil, err
+		}
+		if item.Kind == "release-set" && !foundLatest {
+			return nil, fmt.Errorf("source %s does not contain latest file %s", item.Name, item.Latest)
 		}
 	}
 	return entries, nil
@@ -405,8 +429,8 @@ func writeIndex(output string, entries []entry) error {
 	for _, item := range grouped["guide"] {
 		fmt.Fprintf(&content, "<article><h3><a href=\"%s\">%s</a></h3><p>%s</p></article>", template.HTMLEscapeString(item.URL), template.HTMLEscapeString(item.Title), template.HTMLEscapeString(item.Summary))
 	}
-	content.WriteString("</div></section><section><h2>Reference</h2><p>Browse RFCs, schemas, API data, and lint rules from their owning repositories.</p><ul class=\"reference-links\">")
-	for _, kind := range []string{"rfc", "schema", "api", "rule"} {
+	content.WriteString("</div></section><section><h2>Reference</h2><p>Browse RFCs, schemas, release sets, API data, and lint rules from their owning repositories.</p><ul class=\"reference-links\">")
+	for _, kind := range []string{"rfc", "schema", "release-set", "api", "rule"} {
 		if len(grouped[kind]) > 0 {
 			fmt.Fprintf(&content, "<li><a href=\"/search.html?kind=%s\">%s <span>%d</span></a></li>", kind, template.HTMLEscapeString(strings.ToUpper(kind)), len(grouped[kind]))
 		}
