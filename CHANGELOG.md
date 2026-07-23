@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.1 - 2026-07-23
+
+- Publish schemas and RFCs from `pawnkit-spec v0.1.8`.
+- Update API data to `pawn-api v0.18.0`.
+- Update lint rules to `pawnlint v1.1.4`.
+
 ## 0.1.0 - 2026-07-20
 
 - Add rendered guides and generated reference pages.
