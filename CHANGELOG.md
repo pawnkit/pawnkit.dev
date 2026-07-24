@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.2 - 2026-07-24
+
+- Match the deployment checkout to the pinned standards release.
+
 ## 0.3.1 - 2026-07-24
 
 - Publish the build-backend schema and current RFCs.
