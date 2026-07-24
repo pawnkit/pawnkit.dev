@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.1 - 2026-07-24
+
+- Publish the build-backend schema and current RFCs.
+- Update standards to `pawnkit-spec v0.1.20`.
+
 ## 0.3.0 - 2026-07-23
 
 - Publish API confidence and review status.
