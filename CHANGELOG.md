@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.3 - 2026-07-24
+
+- Publish the tested direct compiler build release set.
+- Update standards to `pawnkit-spec v0.1.21`.
+
 ## 0.3.2 - 2026-07-24
 
 - Match the deployment checkout to the pinned standards release.
