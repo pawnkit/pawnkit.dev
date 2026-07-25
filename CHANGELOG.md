@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.4 - 2026-07-25
+
+- Publish diagnostic schema v2.
+- Update standards to `pawnkit-spec v0.1.22`.
+
 ## 0.3.3 - 2026-07-24
 
 - Publish the tested direct compiler build release set.
