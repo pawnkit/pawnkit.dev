@@ -18,6 +18,41 @@ type searchEntry struct {
 	RawURL     string `json:"raw_url"`
 }
 
+type sourceConfig struct {
+	Sources []struct {
+		Repository string `json:"repository"`
+		Ref        string `json:"ref"`
+	} `json:"sources"`
+}
+
+func TestWorkflowPinsMatchSources(t *testing.T) {
+	data, err := os.ReadFile("sources.json")
+	if err != nil {
+		t.Fatal(err)
+	}
+	var config sourceConfig
+	if err := json.Unmarshal(data, &config); err != nil {
+		t.Fatal(err)
+	}
+
+	for _, workflow := range []string{".github/workflows/ci.yml", ".github/workflows/deploy.yml"} {
+		data, err := os.ReadFile(workflow)
+		if err != nil {
+			t.Fatal(err)
+		}
+		content := string(data)
+		for _, source := range config.Sources {
+			repository := strings.TrimPrefix(source.Repository, "https://github.com/")
+			if !strings.Contains(content, "repository: "+repository) {
+				continue
+			}
+			if !strings.Contains(content, "ref: "+source.Ref) {
+				t.Fatalf("%s does not pin %s to %s", workflow, repository, source.Ref)
+			}
+		}
+	}
+}
+
 func TestBuildAndSearchIndex(t *testing.T) {
 	command := exec.Command("go", "run", "./cmd/site")
 	if output, err := command.CombinedOutput(); err != nil {

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.5 - 2026-07-25
+
+- Keep CI and deployment source pins in sync.
+- Publish build-backend schema v2.
+- Update standards to `pawnkit-spec v0.1.23`.
+
 ## 0.3.4 - 2026-07-25
 
 - Publish diagnostic schema v2.
