@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.6 - 2026-07-25
+
+- Publish the tested diagnostic v2 release set.
+- Update standards to `pawnkit-spec v0.1.24`.
+
 ## 0.3.5 - 2026-07-25
 
 - Keep CI and deployment source pins in sync.
