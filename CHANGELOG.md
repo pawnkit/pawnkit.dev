@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.9 - 2026-07-25
+
+- Publish the release-set v2 dependency candidate.
+- Update standards to `pawnkit-spec v0.1.29`.
+
 ## 0.3.8 - 2026-07-25
 
 - Publish release-set schema v2.
