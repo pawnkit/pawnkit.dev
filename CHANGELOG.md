@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.10 - 2026-07-25
+
+- Added the repository support record with CI validation.
+
 ## 0.3.9 - 2026-07-25
 
 - Publish the release-set v2 dependency candidate.

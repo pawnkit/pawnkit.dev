@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "repository": "pawnkit/pawnkit.dev",
+  "maturity": "infrastructure",
+  "platforms": ["linux-amd64"],
+  "profiles": [],
+  "compilers": [],
+  "contracts": [
+    { "name": "pawn-support", "major": 1 }
+  ],
+  "limitations": [
+    "The site publishes owner data and does not define compatibility itself."
+  ]
+}
