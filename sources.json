@@ -3,7 +3,7 @@
     {
       "name": "pawnkit-spec schemas",
       "repository": "https://github.com/pawnkit/pawnkit-spec",
-      "ref": "v0.1.29",
+      "ref": "v0.1.32",
       "path": "pawnkit-spec/schemas",
       "source_path": "schemas",
       "kind": "schema"
@@ -11,7 +11,7 @@
     {
       "name": "pawnkit-spec RFCs",
       "repository": "https://github.com/pawnkit/pawnkit-spec",
-      "ref": "v0.1.29",
+      "ref": "v0.1.32",
       "path": "pawnkit-spec/rfcs",
       "source_path": "rfcs",
       "kind": "rfc"
@@ -19,7 +19,7 @@
     {
       "name": "PawnKit tested release sets",
       "repository": "https://github.com/pawnkit/pawnkit-spec",
-      "ref": "v0.1.29",
+      "ref": "v0.1.32",
       "path": "pawnkit-spec/release-sets",
       "source_path": "release-sets",
       "kind": "release-set",
@@ -28,7 +28,7 @@
     {
       "name": "pawn-api",
       "repository": "https://github.com/pawnkit/pawn-api",
-      "ref": "v0.19.0",
+      "ref": "v0.19.1",
       "path": "pawn-api/data/generated",
       "source_path": "data/generated",
       "kind": "api"
@@ -36,10 +36,186 @@
     {
       "name": "pawnlint rules",
       "repository": "https://github.com/pawnkit/pawnlint",
-      "ref": "v1.1.4",
+      "ref": "v1.1.11",
       "path": "pawnlint/docs/rules",
       "source_path": "docs/rules",
       "kind": "rule"
+    },
+    {
+      "name": "pawnkit-core support",
+      "repository": "https://github.com/pawnkit/pawnkit-core",
+      "ref": "v0.2.1",
+      "path": "pawnkit-core/.pawnkit",
+      "source_path": ".pawnkit",
+      "kind": "support"
+    },
+    {
+      "name": "pawn-parser support",
+      "repository": "https://github.com/pawnkit/pawn-parser",
+      "ref": "v1.1.10",
+      "path": "pawn-parser/.pawnkit",
+      "source_path": ".pawnkit",
+      "kind": "support"
+    },
+    {
+      "name": "pawn-analysis support",
+      "repository": "https://github.com/pawnkit/pawn-analysis",
+      "ref": "v0.1.18",
+      "path": "pawn-analysis/.pawnkit",
+      "source_path": ".pawnkit",
+      "kind": "support"
+    },
+    {
+      "name": "pawn-project support",
+      "repository": "https://github.com/pawnkit/pawn-project",
+      "ref": "v0.3.1",
+      "path": "pawn-project/.pawnkit",
+      "source_path": ".pawnkit",
+      "kind": "support"
+    },
+    {
+      "name": "pawn-api support",
+      "repository": "https://github.com/pawnkit/pawn-api",
+      "ref": "v0.19.1",
+      "path": "pawn-api/.pawnkit",
+      "source_path": ".pawnkit",
+      "kind": "support"
+    },
+    {
+      "name": "pawnfmt support",
+      "repository": "https://github.com/pawnkit/pawnfmt",
+      "ref": "v1.3.6",
+      "path": "pawnfmt/.pawnkit",
+      "source_path": ".pawnkit",
+      "kind": "support"
+    },
+    {
+      "name": "pawnlint support",
+      "repository": "https://github.com/pawnkit/pawnlint",
+      "ref": "v1.1.11",
+      "path": "pawnlint/.pawnkit",
+      "source_path": ".pawnkit",
+      "kind": "support"
+    },
+    {
+      "name": "pawnlsp support",
+      "repository": "https://github.com/pawnkit/pawnlsp",
+      "ref": "v0.26.11",
+      "path": "pawnlsp/.pawnkit",
+      "source_path": ".pawnkit",
+      "kind": "support"
+    },
+    {
+      "name": "pawntest support",
+      "repository": "https://github.com/pawnkit/pawntest",
+      "ref": "v1.2.1",
+      "path": "pawntest/.pawnkit",
+      "source_path": ".pawnkit",
+      "kind": "support"
+    },
+    {
+      "name": "goamx support",
+      "repository": "https://github.com/pawnkit/goamx",
+      "ref": "v1.1.1",
+      "path": "goamx/.pawnkit",
+      "source_path": ".pawnkit",
+      "kind": "support"
+    },
+    {
+      "name": "pawnmigrate support",
+      "repository": "https://github.com/pawnkit/pawnmigrate",
+      "ref": "v0.2.2",
+      "path": "pawnmigrate/.pawnkit",
+      "source_path": ".pawnkit",
+      "kind": "support"
+    },
+    {
+      "name": "pawndoc support",
+      "repository": "https://github.com/pawnkit/pawndoc",
+      "ref": "v0.1.5",
+      "path": "pawndoc/.pawnkit",
+      "source_path": ".pawnkit",
+      "kind": "support"
+    },
+    {
+      "name": "pawnkit-cli support",
+      "repository": "https://github.com/pawnkit/pawnkit-cli",
+      "ref": "v1.3.1",
+      "path": "pawnkit-cli/.pawnkit",
+      "source_path": ".pawnkit",
+      "kind": "support"
+    },
+    {
+      "name": "vscode-pawn support",
+      "repository": "https://github.com/pawnkit/vscode-pawn",
+      "ref": "v0.13.7",
+      "path": "vscode-pawn/.pawnkit",
+      "source_path": ".pawnkit",
+      "kind": "support"
+    },
+    {
+      "name": "tree-sitter-pawn support",
+      "repository": "https://github.com/pawnkit/tree-sitter-pawn",
+      "ref": "v0.1.1",
+      "path": "tree-sitter-pawn/.pawnkit",
+      "source_path": ".pawnkit",
+      "kind": "support"
+    },
+    {
+      "name": "pawn-actions support",
+      "repository": "https://github.com/pawnkit/pawn-actions",
+      "ref": "v1.6.2",
+      "path": "pawn-actions/.pawnkit",
+      "source_path": ".pawnkit",
+      "kind": "support"
+    },
+    {
+      "name": "pawnkit-spec support",
+      "repository": "https://github.com/pawnkit/pawnkit-spec",
+      "ref": "v0.1.32",
+      "path": "pawnkit-spec/.pawnkit",
+      "source_path": ".pawnkit",
+      "kind": "support"
+    },
+    {
+      "name": "pawn-corpus support",
+      "repository": "https://github.com/pawnkit/pawn-corpus",
+      "ref": "v0.1.12",
+      "path": "pawn-corpus/.pawnkit",
+      "source_path": ".pawnkit",
+      "kind": "support"
+    },
+    {
+      "name": "pawnkit.dev support",
+      "repository": "https://github.com/pawnkit/pawnkit.dev",
+      "ref": "v0.3.10",
+      "path": "pawnkit.dev/.pawnkit",
+      "source_path": ".pawnkit",
+      "kind": "support"
+    },
+    {
+      "name": "pawndebug support",
+      "repository": "https://github.com/pawnkit/pawndebug",
+      "ref": "v0.2.1",
+      "path": "pawndebug/.pawnkit",
+      "source_path": ".pawnkit",
+      "kind": "support"
+    },
+    {
+      "name": "pawn-plugin-host support",
+      "repository": "https://github.com/pawnkit/pawn-plugin-host",
+      "ref": "v0.1.2",
+      "path": "pawn-plugin-host/.pawnkit",
+      "source_path": ".pawnkit",
+      "kind": "support"
+    },
+    {
+      "name": "pawnserver support",
+      "repository": "https://github.com/pawnkit/pawnserver",
+      "ref": "v0.1.1",
+      "path": "pawnserver/.pawnkit",
+      "source_path": ".pawnkit",
+      "kind": "support"
     }
   ]
 }

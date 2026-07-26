@@ -18,37 +18,14 @@ type searchEntry struct {
 	RawURL     string `json:"raw_url"`
 }
 
-type sourceConfig struct {
-	Sources []struct {
-		Repository string `json:"repository"`
-		Ref        string `json:"ref"`
-	} `json:"sources"`
-}
-
-func TestWorkflowPinsMatchSources(t *testing.T) {
-	data, err := os.ReadFile("sources.json")
-	if err != nil {
-		t.Fatal(err)
-	}
-	var config sourceConfig
-	if err := json.Unmarshal(data, &config); err != nil {
-		t.Fatal(err)
-	}
-
+func TestWorkflowsFetchPinnedSources(t *testing.T) {
 	for _, workflow := range []string{".github/workflows/ci.yml", ".github/workflows/deploy.yml"} {
 		data, err := os.ReadFile(workflow)
 		if err != nil {
 			t.Fatal(err)
 		}
-		content := string(data)
-		for _, source := range config.Sources {
-			repository := strings.TrimPrefix(source.Repository, "https://github.com/")
-			if !strings.Contains(content, "repository: "+repository) {
-				continue
-			}
-			if !strings.Contains(content, "ref: "+source.Ref) {
-				t.Fatalf("%s does not pin %s to %s", workflow, repository, source.Ref)
-			}
+		if !strings.Contains(string(data), "go run ./cmd/fetch-sources") {
+			t.Fatalf("%s does not fetch sources from sources.json", workflow)
 		}
 	}
 }
@@ -75,7 +52,7 @@ func TestBuildAndSearchIndex(t *testing.T) {
 	for _, entry := range entries {
 		if entry.URL == "/reference/rule/missing-include.html" {
 			foundRule = true
-			if entry.Kind != "rule" || entry.Version != "v1.1.4" || entry.Repository == "" || entry.RawURL == "" {
+			if entry.Kind != "rule" || entry.Version != "v1.1.11" || entry.Repository == "" || entry.RawURL == "" {
 				t.Fatalf("rule provenance = %#v", entry)
 			}
 		}
@@ -86,10 +63,14 @@ func TestBuildAndSearchIndex(t *testing.T) {
 
 	assertContains(t, "dist/index.html", `class="skip-link"`)
 	assertContains(t, "dist/index.html", `href="/guides/getting-started.html"`)
+	assertContains(t, "dist/index.html", `href="/support.html"`)
+	assertContains(t, "dist/support.html", "pawnkit/pawn-parser")
+	assertContains(t, "dist/support.html", "preview")
+	assertContains(t, "dist/support.html", "/raw/support/pawn-parser/v1.1.10/support.json")
 	assertContains(t, "dist/search.html", `aria-live="polite"`)
 	assertContains(t, "dist/reference/rule/missing-include.html", "Raw file")
 
-	if _, err := os.Stat(filepath.Join("dist", "raw", "rule", "v1.1.4", "missing-include.md")); err != nil {
+	if _, err := os.Stat(filepath.Join("dist", "raw", "rule", "v1.1.11", "missing-include.md")); err != nil {
 		t.Fatal(err)
 	}
 	if _, err := os.Stat(filepath.Join("dist", "raw", "rule", "latest", "missing-include.md")); err != nil {

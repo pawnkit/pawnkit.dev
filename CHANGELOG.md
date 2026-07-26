@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.11 - 2026-07-25
+
+- Publish repository maturity, tested platforms, and known limits from tagged
+  owner records.
+- Publish the runtime-fidelity schema and update standards to
+  `pawnkit-spec v0.1.32`.
+- Fetch all generated sources from the refs in `sources.json`.
+
 ## 0.3.10 - 2026-07-25
 
 - Added the repository support record with CI validation.

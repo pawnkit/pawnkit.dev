@@ -1,6 +1,10 @@
 version: "3"
 
 tasks:
+  sync:
+    cmds:
+      - go run ./cmd/fetch-sources
+
   build:
     cmds:
       - go run ./cmd/site

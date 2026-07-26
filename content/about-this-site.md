@@ -6,9 +6,9 @@ material in one place.
 
 ## Which page is authoritative?
 
-Guides are maintained here. Schemas, RFCs, API data, and lint rules come from the
-repository named at the top of each reference page. Fix a generated fact in that
-repository so every consumer receives the same correction.
+Guides are maintained here. Schemas, RFCs, API data, lint rules, and support
+records come from the repository named on the generated page. Fix a generated
+fact in that repository so every consumer receives the same correction.
 
 Source revisions are pinned in `sources.json`. Reference pages and raw files are
 published under both a revision and `latest`. Use a versioned URL when a build

@@ -24,28 +24,11 @@ jobs:
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
         with:
           persist-credentials: false
-      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
-        with:
-          repository: pawnkit/pawnkit-spec
-          ref: v0.1.29
-          path: sources/pawnkit-spec
-          persist-credentials: false
-      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
-        with:
-          repository: pawnkit/pawn-api
-          ref: v0.19.0
-          path: sources/pawn-api
-          persist-credentials: false
-      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
-        with:
-          repository: pawnkit/pawnlint
-          ref: v1.1.4
-          path: sources/pawnlint
-          persist-credentials: false
       - uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16 # v6
         with:
           go-version-file: go.mod
           cache: true
+      - run: go run ./cmd/fetch-sources
       - run: go test ./...
       - run: go run ./cmd/site
       - uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5

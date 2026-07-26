@@ -11,7 +11,14 @@ are available from stable raw URLs.
 
 ## Build the site
 
-Clone `pawnkit-spec`, `pawn-api`, and `pawnlint` beside this repository, then run:
+Fetch the tagged source repositories and build:
+
+```sh
+go run ./cmd/fetch-sources
+PAWNKIT_SOURCE_ROOT=sources go run ./cmd/site
+```
+
+If the repositories already sit beside this checkout, only run:
 
 ```sh
 go run ./cmd/site
@@ -28,9 +35,9 @@ check internal links, and verify source provenance and stable URLs.
 
 ## Where content belongs
 
-Write practical guides in `content`. RFCs, schemas, API data, and lint rules stay
-in their owning repositories and are listed in `sources.json` at a pinned tag or
-commit.
+Write practical guides in `content`. RFCs, schemas, API data, lint rules, and
+support records stay in their owning repositories. `sources.json` pins the
+release used for each one.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow.
 

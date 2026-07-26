@@ -100,6 +100,15 @@ h1 {
   border-bottom: 1px solid var(--line);
 }
 
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; }
+th, td {
+  padding: .7rem;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
 .provenance {
   padding-bottom: 1rem;
   color: var(--muted);

@@ -46,14 +46,23 @@ type source struct {
 }
 
 type entry struct {
-	Title      string `json:"title"`
-	URL        string `json:"url"`
-	Kind       string `json:"kind"`
-	Source     string `json:"source"`
-	Version    string `json:"version"`
-	Repository string `json:"repository"`
-	RawURL     string `json:"raw_url,omitempty"`
-	Summary    string `json:"summary,omitempty"`
+	Title      string   `json:"title"`
+	URL        string   `json:"url"`
+	Kind       string   `json:"kind"`
+	Source     string   `json:"source"`
+	Version    string   `json:"version"`
+	Repository string   `json:"repository"`
+	RawURL     string   `json:"raw_url,omitempty"`
+	Summary    string   `json:"summary,omitempty"`
+	Maturity   string   `json:"maturity,omitempty"`
+	Platforms  []string `json:"platforms,omitempty"`
+}
+
+type supportRecord struct {
+	Repository  string   `json:"repository"`
+	Maturity    string   `json:"maturity"`
+	Platforms   []string `json:"platforms"`
+	Limitations []string `json:"limitations"`
 }
 
 type pageData struct {
@@ -117,6 +126,9 @@ func Build(options Options) error {
 	sortEntries(entries)
 
 	if err := writeIndex(staging, entries); err != nil {
+		return err
+	}
+	if err := writeSupport(staging, entries); err != nil {
 		return err
 	}
 	if err := writeSearch(staging, entries); err != nil {
@@ -226,10 +238,15 @@ func buildSources(output, sourceRoot string, sources []source) ([]entry, error) 
 			}
 
 			rawPath := path.Join("raw", item.Kind, item.Ref, relative)
+			latestPath := path.Join("raw", item.Kind, "latest", relative)
+			if item.Kind == "support" {
+				repository := strings.Split(item.Path, "/")[0]
+				rawPath = path.Join("raw", item.Kind, repository, item.Ref, relative)
+				latestPath = path.Join("raw", item.Kind, repository, "latest", relative)
+			}
 			if err := writeFile(filepath.Join(output, filepath.FromSlash(rawPath)), data); err != nil {
 				return err
 			}
-			latestPath := path.Join("raw", item.Kind, "latest", relative)
 			if err := writeFile(filepath.Join(output, filepath.FromSlash(latestPath)), data); err != nil {
 				return err
 			}
@@ -264,6 +281,24 @@ func buildSources(output, sourceRoot string, sources []source) ([]entry, error) 
 			if ext == ".json" {
 				summary = fmt.Sprintf("%s data from %s.", titleFromName(item.Kind), item.Name)
 			}
+			var maturity string
+			var platforms []string
+			if item.Kind == "support" {
+				var support supportRecord
+				if err := json.Unmarshal(data, &support); err != nil {
+					return fmt.Errorf("support record %s: %w", name, err)
+				}
+				if support.Repository == "" || support.Maturity == "" {
+					return fmt.Errorf("support record %s is incomplete", name)
+				}
+				title = support.Repository
+				maturity = support.Maturity
+				platforms = support.Platforms
+				summary = support.Maturity + " support"
+				if len(support.Limitations) > 0 {
+					summary += ": " + support.Limitations[0]
+				}
+			}
 			if item.Kind == "schema" {
 				url = publicRawURL
 			}
@@ -273,7 +308,8 @@ func buildSources(output, sourceRoot string, sources []source) ([]entry, error) 
 			entry := entry{
 				Title: title, URL: url, RawURL: publicRawURL, Kind: item.Kind,
 				Source: item.Name, Version: item.Ref, Repository: sourceFileURL(item, relative),
-				Summary: summary,
+				Summary:  summary,
+				Maturity: maturity, Platforms: platforms,
 			}
 			if ext == ".md" {
 				body, err := renderMarkdown(rewriteMarkdownLinks(data, item, relative))
@@ -429,8 +465,8 @@ func writeIndex(output string, entries []entry) error {
 	for _, item := range grouped["guide"] {
 		fmt.Fprintf(&content, "<article><h3><a href=\"%s\">%s</a></h3><p>%s</p></article>", template.HTMLEscapeString(item.URL), template.HTMLEscapeString(item.Title), template.HTMLEscapeString(item.Summary))
 	}
-	content.WriteString("</div></section><section><h2>Reference</h2><p>Browse RFCs, schemas, release sets, API data, and lint rules from their owning repositories.</p><ul class=\"reference-links\">")
-	for _, kind := range []string{"rfc", "schema", "release-set", "api", "rule"} {
+	content.WriteString("</div></section><section><h2>Support</h2><p>Check the maturity, tested platforms, and known limits for each repository.</p><p><a href=\"/support.html\">View repository support</a></p></section><section><h2>Reference</h2><p>Browse RFCs, schemas, release sets, API data, and lint rules from their owning repositories.</p><ul class=\"reference-links\">")
+	for _, kind := range []string{"rfc", "schema", "release-set", "api", "rule", "support"} {
 		if len(grouped[kind]) > 0 {
 			fmt.Fprintf(&content, "<li><a href=\"/search.html?kind=%s\">%s <span>%d</span></a></li>", kind, template.HTMLEscapeString(strings.ToUpper(kind)), len(grouped[kind]))
 		}
@@ -440,6 +476,36 @@ func writeIndex(output string, entries []entry) error {
 		return err
 	}
 	return renderPage(filepath.Join(output, "search.html"), pageData{Title: "Search", Description: "Search PawnKit guides and reference material.", Content: template.HTML(searchMarkup)}) //nolint:gosec // Static markup is trusted.
+}
+
+func writeSupport(output string, entries []entry) error {
+	var support []entry
+	for _, item := range entries {
+		if item.Kind == "support" {
+			support = append(support, item)
+		}
+	}
+	sort.Slice(support, func(i, j int) bool { return support[i].Title < support[j].Title })
+
+	var content strings.Builder
+	content.WriteString("<h1>Repository support</h1><p>These records come from tagged releases in each repository.</p><div class=\"table-wrap\"><table><thead><tr><th>Repository</th><th>Maturity</th><th>Platforms</th><th>Release</th></tr></thead><tbody>")
+	for _, item := range support {
+		fmt.Fprintf(
+			&content, "<tr><td><a href=\"%s\">%s</a><br><small>%s</small></td><td>%s</td><td>%s</td><td>%s</td></tr>",
+			template.HTMLEscapeString(item.RawURL),
+			template.HTMLEscapeString(item.Title),
+			template.HTMLEscapeString(item.Summary),
+			template.HTMLEscapeString(item.Maturity),
+			template.HTMLEscapeString(strings.Join(item.Platforms, ", ")),
+			template.HTMLEscapeString(item.Version),
+		)
+	}
+	content.WriteString("</tbody></table></div>")
+	safeContent := template.HTML(content.String()) //nolint:gosec // Record fields were escaped above.
+
+	return renderPage(filepath.Join(output, "support.html"), pageData{
+		Title: "Repository support", Description: "PawnKit repository maturity, tested platforms, and known limits.", Content: safeContent,
+	})
 }
 
 func writeSearch(output string, entries []entry) error {
