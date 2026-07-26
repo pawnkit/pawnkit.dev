@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.12 - 2026-07-25
+
+- Update the published pawntest support record to v1.2.2.
+
 ## 0.3.11 - 2026-07-25
 
 - Publish repository maturity, tested platforms, and known limits from tagged

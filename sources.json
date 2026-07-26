@@ -108,7 +108,7 @@
     {
       "name": "pawntest support",
       "repository": "https://github.com/pawnkit/pawntest",
-      "ref": "v1.2.1",
+      "ref": "v1.2.2",
       "path": "pawntest/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
