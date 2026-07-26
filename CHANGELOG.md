@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.13 - 2026-07-26
+
+- Publish the July 26 tested toolchain release set.
+- Update standards to `pawnkit-spec v0.1.34`.
+
 ## 0.3.12 - 2026-07-25
 
 - Update the published pawntest support record to v1.2.2.
