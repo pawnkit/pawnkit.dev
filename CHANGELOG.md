@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.15 - 2026-07-29
+
+- Group the public tools into editor, terminal/CI, SDK, and server paths.
+- Add a short SDK guide for tool developers.
+
 ## 0.3.14 - 2026-07-29
 
 - Publish the July 29 tested toolchain release set and compatibility report.

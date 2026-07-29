@@ -1,22 +1,44 @@
-# Choose a tool
+# Choose a PawnKit product
 
-Start with the problem you are trying to solve. Most projects only need a few of
-these tools.
+Most Pawn developers need the editor extension, the `pawn` command, or both.
+The smaller tools are included behind those two entry points.
 
-| Tool | Use it for |
-| --- | --- |
-| `pawn` | Project checks, environment diagnostics, and shared workflows |
-| `pawnfmt` | Stable source formatting |
-| `pawnlint` | Semantic and style diagnostics |
-| `pawntest` | Pawn unit tests, coverage, and profiling |
-| `pawnlsp` | Editor diagnostics, navigation, and completion |
-| `pawnmigrate` | Reviewable source and API migrations |
-| `pawndoc` | API documentation generated from Pawn source |
-| `pawndebug` | AMX debugging through the Debug Adapter Protocol |
-| `pawnserver` | Server bundle inspection, installation, and rollback |
+## Writing Pawn in an editor
 
-Run a binary with `--help` for its exact command and flag list. Released command
-help is authoritative; this site focuses on workflows that cross tool boundaries.
+Install the PawnKit extension for VS Code. It manages a tested set of the
+language server, formatter, linter, and test runner.
 
-Library repositories such as `pawnkit-core`, `pawn-parser`, `pawn-analysis`, and
-`pawn-project` are intended for Go programs that extend the ecosystem.
+Use the extension when you want diagnostics, completion, navigation,
+formatting, tests, and project commands in the editor.
+
+## Working in a terminal or CI
+
+Install the `pawn` command. It runs the same project workflow locally and in
+GitHub Actions:
+
+```sh
+pawn doctor
+pawn check
+pawn build
+pawn test
+```
+
+Use `pawnmigrate` for source migrations and `pawndoc` to generate API
+documentation. These are separate commands because they change or generate
+project files.
+
+## Building Pawn tooling
+
+Use the PawnKit Go libraries if you are writing an editor, build tool, analyser,
+or runtime integration. Start with the [SDK guide](/guides/sdk.html); it maps
+each job to its owning package.
+
+## Running a server
+
+`pawnserver` handles versioned server bundles. It remains experimental and is
+separate from the everyday edit, check, and build workflow. See
+[Run a packaged server](/guides/server-operations.html).
+
+Run any command with `--help` for its current flags. The
+[compatibility report](/guides/compatibility-report.html) lists the tool
+versions tested together.
