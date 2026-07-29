@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.16 - 2026-07-29
+
+- Publish the hardened July 29 toolchain set.
+- Update the formatter, linter, Actions, and standards records.
+
 ## 0.3.15 - 2026-07-29
 
 - Group the public tools into editor, terminal/CI, SDK, and server paths.

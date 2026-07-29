@@ -52,7 +52,7 @@ func TestBuildAndSearchIndex(t *testing.T) {
 	for _, entry := range entries {
 		if entry.URL == "/reference/rule/missing-include.html" {
 			foundRule = true
-			if entry.Kind != "rule" || entry.Version != "v1.7.22" || entry.Repository == "" || entry.RawURL == "" {
+			if entry.Kind != "rule" || entry.Version != "v1.7.23" || entry.Repository == "" || entry.RawURL == "" {
 				t.Fatalf("rule provenance = %#v", entry)
 			}
 		}
@@ -70,7 +70,7 @@ func TestBuildAndSearchIndex(t *testing.T) {
 	assertContains(t, "dist/search.html", `aria-live="polite"`)
 	assertContains(t, "dist/reference/rule/missing-include.html", "Raw file")
 
-	if _, err := os.Stat(filepath.Join("dist", "raw", "rule", "v1.7.22", "missing-include.md")); err != nil {
+	if _, err := os.Stat(filepath.Join("dist", "raw", "rule", "v1.7.23", "missing-include.md")); err != nil {
 		t.Fatal(err)
 	}
 	if _, err := os.Stat(filepath.Join("dist", "raw", "rule", "latest", "missing-include.md")); err != nil {
@@ -79,7 +79,7 @@ func TestBuildAndSearchIndex(t *testing.T) {
 	if _, err := os.Stat(filepath.Join("dist", "pawn-release-set", "v1", "schema.json")); err != nil {
 		t.Fatal(err)
 	}
-	releaseSet, err := os.ReadFile(filepath.Join("dist", "release-sets", "toolchain-preview-2026-07-29.json"))
+	releaseSet, err := os.ReadFile(filepath.Join("dist", "release-sets", "toolchain-preview-2026-07-29-2.json"))
 	if err != nil {
 		t.Fatal(err)
 	}
