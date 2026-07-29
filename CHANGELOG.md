@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Let the guide cards use the full page width on larger screens.
+
 ## 0.3.16 - 2026-07-29
 
 - Publish the hardened July 29 toolchain set.

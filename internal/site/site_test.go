@@ -3,6 +3,7 @@ package site
 import (
 	"os"
 	"path/filepath"
+	"strings"
 	"testing"
 )
 
@@ -44,6 +45,26 @@ func TestRewriteMarkdownLinks(t *testing.T) {
 	want := "[rule](other.html) [guide](https://github.com/pawnkit/pawnlint/blob/v1.0.2/docs/guide.md) [web](https://example.com)"
 	if got := string(rewriteMarkdownLinks(input, item, "index.md")); got != want {
 		t.Fatalf("links = %q, want %q", got, want)
+	}
+}
+
+func TestIndexGuideGridUsesFullWidth(t *testing.T) {
+	output := t.TempDir()
+	entries := []entry{{
+		Kind:    "guide",
+		Title:   "Getting started",
+		URL:     "/guides/getting-started.html",
+		Summary: "Set up PawnKit.",
+	}}
+	if err := writeIndex(output, entries); err != nil {
+		t.Fatal(err)
+	}
+	data, err := os.ReadFile(filepath.Join(output, "index.html"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	if !strings.Contains(string(data), `<section class="wide-section"><h2>Guides</h2>`) {
+		t.Fatal("guide grid is missing its full-width section")
 	}
 }
 

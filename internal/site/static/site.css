@@ -58,6 +58,7 @@ main {
 }
 
 main > * { max-width: 48rem; }
+.wide-section { max-width: none; }
 h1, h2, h3 { line-height: 1.2; }
 
 h1 {

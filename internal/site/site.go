@@ -461,7 +461,7 @@ func writeIndex(output string, entries []entry) error {
 	}
 	var content strings.Builder
 	content.WriteString("<section class=\"hero\"><p class=\"eyebrow\">Pawn tooling, in one place</p><h1>Build and maintain Pawn projects without guesswork.</h1><p>Start with a practical guide, or search the standards and generated references used by PawnKit tools.</p></section>")
-	content.WriteString("<section><h2>Guides</h2><div class=\"cards\">")
+	content.WriteString("<section class=\"wide-section\"><h2>Guides</h2><div class=\"cards\">")
 	for _, item := range grouped["guide"] {
 		fmt.Fprintf(&content, "<article><h3><a href=\"%s\">%s</a></h3><p>%s</p></article>", template.HTMLEscapeString(item.URL), template.HTMLEscapeString(item.Title), template.HTMLEscapeString(item.Summary))
 	}
