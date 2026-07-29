@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.18 - 2026-07-29
+
+- Publish release-set v3 without changing the existing v2 contract.
+- Update standards to `pawnkit-spec v0.1.44`.
+
 ## 0.3.17 - 2026-07-29
 
 - Let the guide cards use the full page width on larger screens.
