@@ -3,7 +3,7 @@
     {
       "name": "pawnkit-spec schemas",
       "repository": "https://github.com/pawnkit/pawnkit-spec",
-      "ref": "v0.1.48",
+      "ref": "v0.1.51",
       "path": "pawnkit-spec/schemas",
       "source_path": "schemas",
       "kind": "schema"
@@ -11,7 +11,7 @@
     {
       "name": "pawnkit-spec RFCs",
       "repository": "https://github.com/pawnkit/pawnkit-spec",
-      "ref": "v0.1.48",
+      "ref": "v0.1.51",
       "path": "pawnkit-spec/rfcs",
       "source_path": "rfcs",
       "kind": "rfc"
@@ -19,11 +19,11 @@
     {
       "name": "PawnKit tested release sets",
       "repository": "https://github.com/pawnkit/pawnkit-spec",
-      "ref": "v0.1.48",
+      "ref": "v0.1.51",
       "path": "pawnkit-spec/release-sets",
       "source_path": "release-sets",
       "kind": "release-set",
-      "latest": "toolchain-signed-2026-07-29.json"
+      "latest": "toolchain-signed-2026-07-29-2.json"
     },
     {
       "name": "pawn-api",
@@ -36,7 +36,7 @@
     {
       "name": "pawnlint rules",
       "repository": "https://github.com/pawnkit/pawnlint",
-      "ref": "v1.7.23",
+      "ref": "v1.7.39",
       "path": "pawnlint/docs/rules",
       "source_path": "docs/rules",
       "kind": "rule"
@@ -52,7 +52,7 @@
     {
       "name": "pawn-parser support",
       "repository": "https://github.com/pawnkit/pawn-parser",
-      "ref": "v1.1.10",
+      "ref": "v1.5.5",
       "path": "pawn-parser/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -60,7 +60,7 @@
     {
       "name": "pawn-analysis support",
       "repository": "https://github.com/pawnkit/pawn-analysis",
-      "ref": "v0.1.18",
+      "ref": "v0.26.0",
       "path": "pawn-analysis/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -92,7 +92,7 @@
     {
       "name": "pawnlint support",
       "repository": "https://github.com/pawnkit/pawnlint",
-      "ref": "v1.7.23",
+      "ref": "v1.7.39",
       "path": "pawnlint/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -100,7 +100,7 @@
     {
       "name": "pawnlsp support",
       "repository": "https://github.com/pawnkit/pawnlsp",
-      "ref": "v0.33.53",
+      "ref": "v0.33.67",
       "path": "pawnlsp/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -140,7 +140,7 @@
     {
       "name": "pawnkit-cli support",
       "repository": "https://github.com/pawnkit/pawnkit-cli",
-      "ref": "v1.4.2",
+      "ref": "v1.5.1",
       "path": "pawnkit-cli/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -148,7 +148,7 @@
     {
       "name": "vscode-pawn support",
       "repository": "https://github.com/pawnkit/vscode-pawn",
-      "ref": "v0.18.4",
+      "ref": "v0.18.17",
       "path": "vscode-pawn/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -164,7 +164,7 @@
     {
       "name": "pawn-actions support",
       "repository": "https://github.com/pawnkit/pawn-actions",
-      "ref": "v1.8.8",
+      "ref": "v1.8.10",
       "path": "pawn-actions/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -172,7 +172,7 @@
     {
       "name": "pawnkit-spec support",
       "repository": "https://github.com/pawnkit/pawnkit-spec",
-      "ref": "v0.1.48",
+      "ref": "v0.1.51",
       "path": "pawnkit-spec/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"

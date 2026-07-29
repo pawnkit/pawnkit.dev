@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.23 - 2026-07-29
+
+- Publish the pawnlint v1.7.39 and pawnlsp v0.33.67 tested toolchain.
+- Update standards and support records to their current releases.
+
 ## 0.3.22 - 2026-07-29
 
 - Publish the corrected pawnkit-spec v0.1.48 release set.
