@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.19 - 2026-07-29
+
+- Publish the tested `pawn v1.5.0` toolchain as the latest set.
+- Update standards to `pawnkit-spec v0.1.45`.
+
 ## 0.3.18 - 2026-07-29
 
 - Publish release-set v3 without changing the existing v2 contract.
