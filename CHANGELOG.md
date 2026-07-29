@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.22 - 2026-07-29
+
+- Publish the corrected pawnkit-spec v0.1.48 release set.
+
 ## 0.3.21 - 2026-07-29
 
 - Publish the signed pawn v1.5.1 toolchain set.
