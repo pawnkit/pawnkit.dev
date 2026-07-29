@@ -3,7 +3,7 @@
     {
       "name": "pawnkit-spec schemas",
       "repository": "https://github.com/pawnkit/pawnkit-spec",
-      "ref": "v0.1.46",
+      "ref": "v0.1.47",
       "path": "pawnkit-spec/schemas",
       "source_path": "schemas",
       "kind": "schema"
@@ -11,7 +11,7 @@
     {
       "name": "pawnkit-spec RFCs",
       "repository": "https://github.com/pawnkit/pawnkit-spec",
-      "ref": "v0.1.46",
+      "ref": "v0.1.47",
       "path": "pawnkit-spec/rfcs",
       "source_path": "rfcs",
       "kind": "rfc"
@@ -19,7 +19,7 @@
     {
       "name": "PawnKit tested release sets",
       "repository": "https://github.com/pawnkit/pawnkit-spec",
-      "ref": "v0.1.46",
+      "ref": "v0.1.47",
       "path": "pawnkit-spec/release-sets",
       "source_path": "release-sets",
       "kind": "release-set",
@@ -164,7 +164,7 @@
     {
       "name": "pawn-actions support",
       "repository": "https://github.com/pawnkit/pawn-actions",
-      "ref": "v1.6.13",
+      "ref": "v1.8.6",
       "path": "pawn-actions/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -172,7 +172,7 @@
     {
       "name": "pawnkit-spec support",
       "repository": "https://github.com/pawnkit/pawnkit-spec",
-      "ref": "v0.1.46",
+      "ref": "v0.1.47",
       "path": "pawnkit-spec/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
