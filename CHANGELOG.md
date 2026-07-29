@@ -1,8 +1,10 @@
 # Changelog
 
-## Unreleased
+## 0.3.17 - 2026-07-29
 
 - Let the guide cards use the full page width on larger screens.
+- Publish the pawnserver and supply-chain preview sets.
+- Update standards to `pawnkit-spec v0.1.42`.
 
 ## 0.3.16 - 2026-07-29
 
