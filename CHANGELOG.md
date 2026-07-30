@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.29 - 2026-07-30
+
+- Publish the corrected open.mp runtime index for amd64 hosts.
+
 ## 0.3.28 - 2026-07-30
 
 - Publish the open.mp 1.5.8.3079 runtime index and its schema.

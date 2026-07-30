@@ -94,6 +94,11 @@ func TestBuildAndSearchIndex(t *testing.T) {
 	)); err != nil {
 		t.Fatal(err)
 	}
+	if _, err := os.Stat(filepath.Join(
+		"dist", "runtime-indexes", "openmp-1.5.8.3079-linux-windows.json",
+	)); err != nil {
+		t.Fatal(err)
+	}
 	releaseSet, err := os.ReadFile(filepath.Join("dist", "release-sets", "toolchain-signed-2026-07-30.json"))
 	if err != nil {
 		t.Fatal(err)
