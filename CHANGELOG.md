@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.26 - 2026-07-30
+
+- Publish reviewed compiler indexes at immutable URLs.
+
 ## 0.3.25 - 2026-07-30
 
 - Explain the transition from sampctl compatibility to a PawnKit-owned

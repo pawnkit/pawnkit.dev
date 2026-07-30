@@ -79,6 +79,11 @@ func TestBuildAndSearchIndex(t *testing.T) {
 	if _, err := os.Stat(filepath.Join("dist", "pawn-release-set", "v1", "schema.json")); err != nil {
 		t.Fatal(err)
 	}
+	if _, err := os.Stat(filepath.Join(
+		"dist", "compiler-indexes", "pawn-3.10.10-openmp-3.10.11.json",
+	)); err != nil {
+		t.Fatal(err)
+	}
 	releaseSet, err := os.ReadFile(filepath.Join("dist", "release-sets", "toolchain-signed-2026-07-30.json"))
 	if err != nil {
 		t.Fatal(err)

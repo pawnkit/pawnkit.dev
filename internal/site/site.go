@@ -65,6 +65,10 @@ type supportRecord struct {
 	Limitations []string `json:"limitations"`
 }
 
+type compilerIndex struct {
+	ID string `json:"id"`
+}
+
 type pageData struct {
 	Title       string
 	Description string
@@ -271,6 +275,17 @@ func buildSources(output, sourceRoot string, sources []source) ([]entry, error) 
 					foundLatest = true
 				}
 			}
+			if item.Kind == "compiler-index" {
+				var index compilerIndex
+				if err := json.Unmarshal(data, &index); err != nil || index.ID == "" {
+					return fmt.Errorf("compiler index %s has no ID", name)
+				}
+				indexPath := path.Join("compiler-indexes", index.ID+".json")
+				if err := writeFile(filepath.Join(output, filepath.FromSlash(indexPath)), data); err != nil {
+					return err
+				}
+				publicRawURL = "/" + indexPath
+			}
 
 			title := titleFromName(relative)
 			if ext == ".md" {
@@ -299,7 +314,7 @@ func buildSources(output, sourceRoot string, sources []source) ([]entry, error) 
 					summary += ": " + support.Limitations[0]
 				}
 			}
-			if item.Kind == "schema" {
+			if item.Kind == "schema" || item.Kind == "compiler-index" {
 				url = publicRawURL
 			}
 			if ext == ".md" {
