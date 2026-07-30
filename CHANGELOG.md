@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.24 - 2026-07-30
+
+- Publish the signed July 30 toolchain set and its compatibility report.
+- Update support records to the versions used by that set.
+
 ## 0.3.23 - 2026-07-29
 
 - Publish the pawnlint v1.7.39 and pawnlsp v0.33.67 tested toolchain.
