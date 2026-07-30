@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.25 - 2026-07-30
+
+- Explain the transition from sampctl compatibility to a PawnKit-owned
+  workflow.
+- Document library-to-library source migrations.
+
 ## 0.3.24 - 2026-07-30
 
 - Publish the signed July 30 toolchain set and its compatibility report.

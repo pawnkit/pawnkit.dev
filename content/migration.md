@@ -22,3 +22,13 @@ review and may change runtime behaviour.
 For an SA-MP to open.mp move, update the target profile and dependencies before
 rewriting APIs. This gives the analysis tools the right includes and API metadata
 for the rest of the migration.
+
+PawnKit keeps reading sampctl-compatible projects so adoption does not require
+an immediate manifest rewrite. That compatibility is a migration path: the
+target workflow uses `pawn` for dependencies, toolchains, builds, tests, and
+runtime commands without requiring sampctl.
+
+`pawnmigrate` also handles reviewed source migrations, including moves between
+Pawn libraries when a supported rule exists. These rules may change project
+dependencies and source together. They leave ambiguous code unchanged and
+report work that still needs a maintainer.
