@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.28 - 2026-07-30
+
+- Publish the open.mp 1.5.8.3079 runtime index and its schema.
+
 ## 0.3.27 - 2026-07-30
 
 - Publish the compiler index covering Pawn 3.10.8 projects.

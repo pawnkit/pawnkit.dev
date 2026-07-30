@@ -275,12 +275,12 @@ func buildSources(output, sourceRoot string, sources []source) ([]entry, error) 
 					foundLatest = true
 				}
 			}
-			if item.Kind == "compiler-index" {
+			if item.Kind == "compiler-index" || item.Kind == "runtime-index" {
 				var index compilerIndex
 				if err := json.Unmarshal(data, &index); err != nil || index.ID == "" {
-					return fmt.Errorf("compiler index %s has no ID", name)
+					return fmt.Errorf("%s %s has no ID", item.Kind, name)
 				}
-				indexPath := path.Join("compiler-indexes", index.ID+".json")
+				indexPath := path.Join(item.Kind+"es", index.ID+".json")
 				if err := writeFile(filepath.Join(output, filepath.FromSlash(indexPath)), data); err != nil {
 					return err
 				}
@@ -314,7 +314,7 @@ func buildSources(output, sourceRoot string, sources []source) ([]entry, error) 
 					summary += ": " + support.Limitations[0]
 				}
 			}
-			if item.Kind == "schema" || item.Kind == "compiler-index" {
+			if item.Kind == "schema" || item.Kind == "compiler-index" || item.Kind == "runtime-index" {
 				url = publicRawURL
 			}
 			if ext == ".md" {
