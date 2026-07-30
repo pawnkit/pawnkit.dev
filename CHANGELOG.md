@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.27 - 2026-07-30
+
+- Publish the compiler index covering Pawn 3.10.8 projects.
+
 ## 0.3.26 - 2026-07-30
 
 - Publish reviewed compiler indexes at immutable URLs.
