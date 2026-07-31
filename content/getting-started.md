@@ -26,8 +26,9 @@ Create `pawn.json` in the project root. Start with the target and entry point:
 ```json
 {
   "$schema": "https://schemas.pawnkit.dev/pawn-project/v1/schema.json",
-  "target": "openmp",
-  "entry": "gamemodes/main.pwn"
+  "preset": "openmp",
+  "entry": "gamemodes/main.pwn",
+  "output": "gamemodes/main.amx"
 }
 ```
 
@@ -46,3 +47,22 @@ pawn fmt
 
 Then add linting and tests. Keep the commands in CI once the existing codebase
 passes them consistently.
+
+## Build and run
+
+Build with the compiler selected by the project:
+
+```sh
+pawn build
+```
+
+For an open.mp project, `pawn run` builds the script and starts it with the
+reviewed server runtime:
+
+```sh
+pawn run
+```
+
+PawnKit downloads and verifies the compiler and runtime when they are not
+already available. Projects that need native plugins or filterscripts still
+require a configured build backend.

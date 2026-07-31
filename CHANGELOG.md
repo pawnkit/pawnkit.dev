@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.30 - 2026-07-31
+
+- Document verified native `pawn run` sessions.
+- Fix the starter manifest to use the supported `preset` field.
+
 ## 0.3.29 - 2026-07-30
 
 - Publish the corrected open.mp runtime index for amd64 hosts.

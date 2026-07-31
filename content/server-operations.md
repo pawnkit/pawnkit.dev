@@ -3,6 +3,9 @@
 `pawnserver` installs versioned open.mp and SA-MP server bundles. A bundle records
 its binaries, checksums, entry points, configuration, and persistent paths.
 
+For local open.mp development, use `pawn run`. The bundle commands below are
+for deployment and rollback.
+
 Inspect an archive before installing it:
 
 ```sh

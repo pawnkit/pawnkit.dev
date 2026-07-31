@@ -21,6 +21,7 @@ pawn doctor
 pawn check
 pawn build
 pawn test
+pawn run
 ```
 
 Use `pawnmigrate` for source migrations and `pawndoc` to generate API
@@ -33,10 +34,12 @@ Use the PawnKit Go libraries if you are writing an editor, build tool, analyser,
 or runtime integration. Start with the [SDK guide](/guides/sdk.html); it maps
 each job to its owning package.
 
-## Running a server
+## Running a project
 
-`pawnserver` handles versioned server bundles. It remains experimental and is
-separate from the everyday edit, check, and build workflow. See
+Use `pawn run` for local open.mp development. It builds the project and starts a
+verified runtime in an isolated session.
+
+`pawnserver` handles versioned deployment bundles. See
 [Run a packaged server](/guides/server-operations.html).
 
 Run any command with `--help` for its current flags. The
