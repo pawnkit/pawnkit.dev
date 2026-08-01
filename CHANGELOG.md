@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.51 - 2026-08-01
+
+- Publish VS Code extension v0.18.38 with Pawn color decorators and picker support.
+
 ## 0.3.50 - 2026-08-01
 
 - Publish VS Code extension v0.18.37 with safer managed-tool replacement while the language server is running.
