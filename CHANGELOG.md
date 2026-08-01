@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.39 - 2026-08-01
+
+- Publish the signed toolchain with pawnlint 1.8.15 and pawnlsp 0.33.78.
+- Refresh the Pawn Actions support record to v1.8.33.
+
 ## 0.3.38 - 2026-08-01
 
 - Publish the signed toolchain with pawnlint 1.8.14 and pawnlsp 0.33.77.
