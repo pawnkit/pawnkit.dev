@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.50 - 2026-08-01
+
+- Publish VS Code extension v0.18.37 with safer managed-tool replacement while the language server is running.
+
 ## 0.3.49 - 2026-08-01
 
 - Publish the corrected signed toolchain with pawnlint 1.8.22 and pawnlsp 0.33.86.
