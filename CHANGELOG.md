@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.34 - 2026-08-01
+
+- Record the open.mp build coverage in the current compatibility report.
+
 ## 0.3.33 - 2026-08-01
 
 - Refresh the Pawn Actions support record to v1.8.29.

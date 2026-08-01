@@ -20,13 +20,13 @@ The exact commits, release archives, sizes, and SHA-256 hashes are in the
 
 The same release set ran against the small SA-MP and open.mp projects in
 `pawn-corpus`. `pawn doctor`, `pawn fmt --check`, and `pawn lint` passed on all
-three platforms. Linux also ran the tests, compiler build, and packaged run
-adapter.
+three platforms. Linux also built all three golden projects, ran the tests,
+and exercised the packaged run adapter.
 
 The compiler-backed build used Pawn 3.10.10 on Linux. The run check used the
 published adapter protocol fixture; it did not start a live open.mp server.
 
-See the [successful Actions run](https://github.com/pawnkit/pawn-actions/actions/runs/30693476478)
+See the [successful Actions run](https://github.com/pawnkit/pawn-actions/actions/runs/30694593868)
 for the recorded jobs.
 
 ## Known limits
