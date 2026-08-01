@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.33 - 2026-08-01
+
+- Refresh the Pawn Actions support record to v1.8.29.
+
 ## 0.3.32 - 2026-08-01
 
 - Refresh the VS Code extension support record to v0.18.23.

@@ -180,7 +180,7 @@
     {
       "name": "pawn-actions support",
       "repository": "https://github.com/pawnkit/pawn-actions",
-      "ref": "v1.8.27",
+      "ref": "v1.8.29",
       "path": "pawn-actions/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
