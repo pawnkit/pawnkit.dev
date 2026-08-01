@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.63 - 2026-08-01
+
+- Refresh support records for the latest published repositories.
+
 ## 0.3.62 - 2026-08-01
 
 - Refresh support records for pawn-analysis 0.30.8, pawnlint 1.8.24,

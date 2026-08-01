@@ -100,7 +100,7 @@
     {
       "name": "pawnfmt support",
       "repository": "https://github.com/pawnkit/pawnfmt",
-      "ref": "v1.4.4",
+      "ref": "v1.4.5",
       "path": "pawnfmt/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -132,7 +132,7 @@
     {
       "name": "goamx support",
       "repository": "https://github.com/pawnkit/goamx",
-      "ref": "v1.1.1",
+      "ref": "v1.1.2",
       "path": "goamx/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -140,7 +140,7 @@
     {
       "name": "pawnmigrate support",
       "repository": "https://github.com/pawnkit/pawnmigrate",
-      "ref": "v0.2.2",
+      "ref": "v0.3.1",
       "path": "pawnmigrate/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -204,7 +204,7 @@
     {
       "name": "pawnkit.dev support",
       "repository": "https://github.com/pawnkit/pawnkit.dev",
-      "ref": "v0.3.43",
+      "ref": "v0.3.62",
       "path": "pawnkit.dev/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -212,7 +212,7 @@
     {
       "name": "pawndebug support",
       "repository": "https://github.com/pawnkit/pawndebug",
-      "ref": "v0.2.1",
+      "ref": "v0.2.2",
       "path": "pawndebug/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -220,7 +220,7 @@
     {
       "name": "pawn-plugin-host support",
       "repository": "https://github.com/pawnkit/pawn-plugin-host",
-      "ref": "v0.1.2",
+      "ref": "v0.1.4",
       "path": "pawn-plugin-host/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -228,7 +228,7 @@
     {
       "name": "pawnserver support",
       "repository": "https://github.com/pawnkit/pawnserver",
-      "ref": "v0.1.1",
+      "ref": "v0.7.0",
       "path": "pawnserver/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
