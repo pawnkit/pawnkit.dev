@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.43 - 2026-08-01
+
+- Align the runtime-index source with the signed 2026-08-01-8 toolchain set.
+
 ## 0.3.42 - 2026-08-01
 
 - Publish the workspace-incremental toolchain with pawnlsp 0.33.81.

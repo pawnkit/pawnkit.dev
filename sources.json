@@ -36,7 +36,7 @@
     {
       "name": "PawnKit runtime indexes",
       "repository": "https://github.com/pawnkit/pawnkit-spec",
-      "ref": "v0.1.92",
+      "ref": "v0.1.93",
       "path": "pawnkit-spec/runtime-indexes",
       "source_path": "runtime-indexes",
       "kind": "runtime-index"
@@ -204,7 +204,7 @@
     {
       "name": "pawnkit.dev support",
       "repository": "https://github.com/pawnkit/pawnkit.dev",
-      "ref": "v0.3.42",
+      "ref": "v0.3.43",
       "path": "pawnkit.dev/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
