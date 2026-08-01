@@ -1,10 +1,13 @@
 # Changelog
 
+## 0.3.60 - 2026-08-01
+
+- Keep the compatibility report tied to the signed release set it documents.
+
 ## 0.3.59 - 2026-08-01
 
 - Refresh the support catalog for pawn-analysis 0.30.7, pawnlint 1.8.23,
   pawnlsp 0.33.90, and PawnKit CLI 1.34.2.
-- Point the compatibility report at the current signed release set.
 
 ## 0.3.58 - 2026-08-01
 

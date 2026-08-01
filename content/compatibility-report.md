@@ -7,14 +7,14 @@ macOS. It is the current set used by PawnKit Actions and editor tooling.
 
 | Tool | Version |
 | --- | --- |
-| PawnKit CLI | 1.34.2 |
+| PawnKit CLI | 1.34.1 |
 | Pawn formatter | 1.4.4 |
-| Pawn linter | 1.8.23 |
-| Pawn language server | 0.33.90 |
+| Pawn linter | 1.8.16 |
+| Pawn language server | 0.33.81 |
 | Pawn test runner | 1.2.5 |
 
 The exact commits, release archives, sizes, and SHA-256 hashes are in the
-[release set](/release-sets/toolchain-signed-2026-08-01-14.json).
+[release set](/release-sets/toolchain-signed-2026-08-01-8.json).
 
 ## What passed
 
