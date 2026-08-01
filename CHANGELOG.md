@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.54 - 2026-08-01
+
+- Publish VS Code extension v0.18.41 with transactional managed-tool replacement.
+
 ## 0.3.53 - 2026-08-01
 
 - Publish VS Code extension v0.18.40 with serialized managed-tool updates.
