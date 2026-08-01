@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.56 - 2026-08-01
+
+- Publish VS Code extension v0.18.42 with consistent semantic token scopes.
+
 ## 0.3.55 - 2026-08-01
 
 - Refresh the pawnlsp support record to v0.33.87.
