@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.36 - 2026-08-01
+
+- Publish the signed toolchain set with the latest linter and language server
+  performance fixes.
+
 ## 0.3.35 - 2026-08-01
 
 - Publish the trivia-reuse toolchain set and refresh the compatibility report.
