@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.62 - 2026-08-01
+
+- Refresh support records for pawn-analysis 0.30.8, pawnlint 1.8.24,
+  pawnlsp 0.33.91, and PawnKit CLI 1.34.3.
+
 ## 0.3.61 - 2026-08-01
 
 - Refresh the pawn-parser support record to v1.5.7.
