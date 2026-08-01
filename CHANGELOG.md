@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.31 - 2026-08-01
+
+- Publish the August 1 signed toolchain set and update source references.
+
 ## 0.3.30 - 2026-07-31
 
 - Document verified native `pawn run` sessions.
