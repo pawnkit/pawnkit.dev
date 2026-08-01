@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.58 - 2026-08-01
+
+- Refresh the pawnlsp support record to v0.33.89.
+
 ## 0.3.57 - 2026-08-01
 
 - Refresh the pawnlsp support record to v0.33.88.
