@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.61 - 2026-08-01
+
+- Refresh the pawn-parser support record to v1.5.7.
+
 ## 0.3.60 - 2026-08-01
 
 - Keep the compatibility report tied to the signed release set it documents.
