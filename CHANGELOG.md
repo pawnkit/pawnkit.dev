@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.53 - 2026-08-01
+
+- Publish VS Code extension v0.18.40 with serialized managed-tool updates.
+
 ## 0.3.52 - 2026-08-01
 
 - Publish VS Code extension v0.18.39 with clearer macro, conditional, and enum highlighting.
