@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.32 - 2026-08-01
+
+- Refresh the VS Code extension support record to v0.18.23.
+
 ## 0.3.31 - 2026-08-01
 
 - Publish the August 1 signed toolchain set and update source references.
