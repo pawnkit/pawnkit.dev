@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.37 - 2026-08-01
+
+- Refresh the VS Code extension support record to v0.18.25.
+
 ## 0.3.36 - 2026-08-01
 
 - Publish the signed toolchain set with the latest linter and language server
