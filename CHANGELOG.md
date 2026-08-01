@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.35 - 2026-08-01
+
+- Publish the trivia-reuse toolchain set and refresh the compatibility report.
+
 ## 0.3.34 - 2026-08-01
 
 - Record the open.mp build coverage in the current compatibility report.
