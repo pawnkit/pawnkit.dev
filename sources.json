@@ -116,7 +116,7 @@
     {
       "name": "pawnlsp support",
       "repository": "https://github.com/pawnkit/pawnlsp",
-      "ref": "v0.33.86",
+      "ref": "v0.33.87",
       "path": "pawnlsp/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"

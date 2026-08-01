@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.55 - 2026-08-01
+
+- Refresh the pawnlsp support record to v0.33.87.
+
 ## 0.3.54 - 2026-08-01
 
 - Publish VS Code extension v0.18.41 with transactional managed-tool replacement.
