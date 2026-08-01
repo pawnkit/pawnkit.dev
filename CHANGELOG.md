@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.40 - 2026-08-01
+
+- Publish the signed toolchain with pawnlint 1.8.16 and pawnlsp 0.33.79.
+- Refresh support records for Pawn Actions v1.8.34 and the VS Code extension
+  v0.18.28.
+
 ## 0.3.39 - 2026-08-01
 
 - Publish the signed toolchain with pawnlint 1.8.15 and pawnlsp 0.33.78.
