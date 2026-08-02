@@ -52,7 +52,7 @@
     {
       "name": "pawnlint rules",
       "repository": "https://github.com/pawnkit/pawnlint",
-      "ref": "v1.8.24",
+      "ref": "v1.8.26",
       "path": "pawnlint/docs/rules",
       "source_path": "docs/rules",
       "kind": "rule"
@@ -108,7 +108,7 @@
     {
       "name": "pawnlint support",
       "repository": "https://github.com/pawnkit/pawnlint",
-      "ref": "v1.8.24",
+      "ref": "v1.8.26",
       "path": "pawnlint/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -116,7 +116,7 @@
     {
       "name": "pawnlsp support",
       "repository": "https://github.com/pawnkit/pawnlsp",
-      "ref": "v0.33.91",
+      "ref": "v0.33.95",
       "path": "pawnlsp/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -156,7 +156,7 @@
     {
       "name": "pawnkit-cli support",
       "repository": "https://github.com/pawnkit/pawnkit-cli",
-      "ref": "v1.34.3",
+      "ref": "v1.34.5",
       "path": "pawnkit-cli/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
