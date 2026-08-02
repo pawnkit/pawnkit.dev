@@ -44,7 +44,7 @@
     {
       "name": "pawn-api",
       "repository": "https://github.com/pawnkit/pawn-api",
-      "ref": "v0.19.3",
+      "ref": "v0.19.4",
       "path": "pawn-api/data/generated",
       "source_path": "data/generated",
       "kind": "api"
@@ -92,7 +92,7 @@
     {
       "name": "pawn-api support",
       "repository": "https://github.com/pawnkit/pawn-api",
-      "ref": "v0.19.3",
+      "ref": "v0.19.4",
       "path": "pawn-api/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
