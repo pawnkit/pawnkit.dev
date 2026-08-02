@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.77 - 2026-08-02
+
+### Changed
+
+- Refresh the PawnKit CLI and Pawn Actions support records.
+
 ## 0.3.76 - 2026-08-02
 
 ### Changed
