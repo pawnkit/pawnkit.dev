@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.86 - 2026-08-02
+
+- Refresh the VS Code extension support record to v0.18.43.
+
 ## 0.3.85 - 2026-08-02
 
 - Refresh support records for pawndebug v0.2.3 and pawn-plugin-host v0.1.5.
