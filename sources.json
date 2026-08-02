@@ -68,7 +68,7 @@
     {
       "name": "pawn-parser support",
       "repository": "https://github.com/pawnkit/pawn-parser",
-      "ref": "v1.5.7",
+      "ref": "v1.5.8",
       "path": "pawn-parser/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -76,7 +76,7 @@
     {
       "name": "pawn-analysis support",
       "repository": "https://github.com/pawnkit/pawn-analysis",
-      "ref": "v0.30.8",
+      "ref": "v0.30.9",
       "path": "pawn-analysis/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -116,7 +116,7 @@
     {
       "name": "pawnlsp support",
       "repository": "https://github.com/pawnkit/pawnlsp",
-      "ref": "v0.33.97",
+      "ref": "v0.33.98",
       "path": "pawnlsp/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"

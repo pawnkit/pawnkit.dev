@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.67 - 2026-08-02
+
+### Changed
+
+- Refresh the parser, analysis, and language-server support records.
+
 ## 0.3.66 - 2026-08-02
 
 - Refresh the pawnlsp support record to v0.33.97.

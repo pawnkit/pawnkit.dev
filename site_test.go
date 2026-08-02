@@ -66,7 +66,7 @@ func TestBuildAndSearchIndex(t *testing.T) {
 	assertContains(t, "dist/index.html", `href="/support.html"`)
 	assertContains(t, "dist/support.html", "pawnkit/pawn-parser")
 	assertContains(t, "dist/support.html", "preview")
-	assertContains(t, "dist/support.html", "/raw/support/pawn-parser/v1.5.7/support.json")
+	assertContains(t, "dist/support.html", "/raw/support/pawn-parser/v1.5.8/support.json")
 	assertContains(t, "dist/search.html", `aria-live="polite"`)
 	assertContains(t, "dist/reference/rule/missing-include.html", "Raw file")
 
