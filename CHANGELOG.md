@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.96 - 2026-08-02
+
+- Refresh the site's own support record to the previous published revision.
+
 ## 0.3.95 - 2026-08-02
 
 - Run the support check with Pawn Actions v1.8.51.
