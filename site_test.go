@@ -52,7 +52,7 @@ func TestBuildAndSearchIndex(t *testing.T) {
 	for _, entry := range entries {
 		if entry.URL == "/reference/rule/missing-include.html" {
 			foundRule = true
-			if entry.Kind != "rule" || entry.Version != "v1.8.27" || entry.Repository == "" || entry.RawURL == "" {
+			if entry.Kind != "rule" || entry.Version != "v1.8.28" || entry.Repository == "" || entry.RawURL == "" {
 				t.Fatalf("rule provenance = %#v", entry)
 			}
 		}
@@ -70,7 +70,7 @@ func TestBuildAndSearchIndex(t *testing.T) {
 	assertContains(t, "dist/search.html", `aria-live="polite"`)
 	assertContains(t, "dist/reference/rule/missing-include.html", "Raw file")
 
-	if _, err := os.Stat(filepath.Join("dist", "raw", "rule", "v1.8.27", "missing-include.md")); err != nil {
+	if _, err := os.Stat(filepath.Join("dist", "raw", "rule", "v1.8.28", "missing-include.md")); err != nil {
 		t.Fatal(err)
 	}
 	if _, err := os.Stat(filepath.Join("dist", "raw", "rule", "latest", "missing-include.md")); err != nil {

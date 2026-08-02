@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.73 - 2026-08-02
+
+### Changed
+
+- Refresh support records for pawndoc 0.1.6, pawnlint 1.8.28, pawnlsp 0.34.1,
+  pawnmigrate 0.3.5, and PawnKit CLI 1.34.9.
+
 ## 0.3.72 - 2026-08-02
 
 ### Changed
