@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.70 - 2026-08-02
+
+### Changed
+
+- Refresh the API, project, formatter, language-server, migration, test-runner,
+  and CLI support records.
+
 ## 0.3.69 - 2026-08-02
 
 ### Changed

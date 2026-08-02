@@ -44,7 +44,7 @@
     {
       "name": "pawn-api",
       "repository": "https://github.com/pawnkit/pawn-api",
-      "ref": "v0.19.1",
+      "ref": "v0.19.3",
       "path": "pawn-api/data/generated",
       "source_path": "data/generated",
       "kind": "api"
@@ -84,7 +84,7 @@
     {
       "name": "pawn-project support",
       "repository": "https://github.com/pawnkit/pawn-project",
-      "ref": "v0.34.1",
+      "ref": "v0.34.2",
       "path": "pawn-project/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -92,7 +92,7 @@
     {
       "name": "pawn-api support",
       "repository": "https://github.com/pawnkit/pawn-api",
-      "ref": "v0.19.1",
+      "ref": "v0.19.3",
       "path": "pawn-api/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -100,7 +100,7 @@
     {
       "name": "pawnfmt support",
       "repository": "https://github.com/pawnkit/pawnfmt",
-      "ref": "v1.4.6",
+      "ref": "v1.4.7",
       "path": "pawnfmt/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -116,7 +116,7 @@
     {
       "name": "pawnlsp support",
       "repository": "https://github.com/pawnkit/pawnlsp",
-      "ref": "v0.33.99",
+      "ref": "v0.34.0",
       "path": "pawnlsp/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -124,7 +124,7 @@
     {
       "name": "pawntest support",
       "repository": "https://github.com/pawnkit/pawntest",
-      "ref": "v1.2.5",
+      "ref": "v1.2.7",
       "path": "pawntest/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -140,7 +140,7 @@
     {
       "name": "pawnmigrate support",
       "repository": "https://github.com/pawnkit/pawnmigrate",
-      "ref": "v0.3.3",
+      "ref": "v0.3.4",
       "path": "pawnmigrate/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -156,7 +156,7 @@
     {
       "name": "pawnkit-cli support",
       "repository": "https://github.com/pawnkit/pawnkit-cli",
-      "ref": "v1.34.7",
+      "ref": "v1.34.8",
       "path": "pawnkit-cli/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
