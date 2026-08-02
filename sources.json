@@ -52,7 +52,7 @@
     {
       "name": "pawnlint rules",
       "repository": "https://github.com/pawnkit/pawnlint",
-      "ref": "v1.8.28",
+      "ref": "v1.8.29",
       "path": "pawnlint/docs/rules",
       "source_path": "docs/rules",
       "kind": "rule"
@@ -76,7 +76,7 @@
     {
       "name": "pawn-analysis support",
       "repository": "https://github.com/pawnkit/pawn-analysis",
-      "ref": "v0.30.9",
+      "ref": "v0.30.10",
       "path": "pawn-analysis/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -108,7 +108,7 @@
     {
       "name": "pawnlint support",
       "repository": "https://github.com/pawnkit/pawnlint",
-      "ref": "v1.8.28",
+      "ref": "v1.8.29",
       "path": "pawnlint/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -116,7 +116,7 @@
     {
       "name": "pawnlsp support",
       "repository": "https://github.com/pawnkit/pawnlsp",
-      "ref": "v0.34.1",
+      "ref": "v0.34.2",
       "path": "pawnlsp/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -140,7 +140,7 @@
     {
       "name": "pawnmigrate support",
       "repository": "https://github.com/pawnkit/pawnmigrate",
-      "ref": "v0.3.5",
+      "ref": "v0.3.6",
       "path": "pawnmigrate/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -148,7 +148,7 @@
     {
       "name": "pawndoc support",
       "repository": "https://github.com/pawnkit/pawndoc",
-      "ref": "v0.1.6",
+      "ref": "v0.1.7",
       "path": "pawndoc/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -156,7 +156,7 @@
     {
       "name": "pawnkit-cli support",
       "repository": "https://github.com/pawnkit/pawnkit-cli",
-      "ref": "v1.34.9",
+      "ref": "v1.34.10",
       "path": "pawnkit-cli/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -180,7 +180,7 @@
     {
       "name": "pawn-actions support",
       "repository": "https://github.com/pawnkit/pawn-actions",
-      "ref": "v1.8.44",
+      "ref": "v1.8.45",
       "path": "pawn-actions/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
