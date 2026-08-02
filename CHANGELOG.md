@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.95 - 2026-08-02
+
+- Run the support check with Pawn Actions v1.8.51.
+
 ## 0.3.94 - 2026-08-02
 
 - Publish the latest signed toolchain and refresh the extension and Actions
