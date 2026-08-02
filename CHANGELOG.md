@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.80 - 2026-08-02
+
+- Refresh the Pawn Actions support record to v1.8.48.
+
 ## 0.3.79 - 2026-08-02
 
 - Refresh pawnlint to 1.8.31, pawnlsp to 0.34.5, and PawnKit CLI to 1.34.14.
