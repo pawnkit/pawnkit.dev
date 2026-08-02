@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.92 - 2026-08-02
+
+- Refresh the compatibility records for the current tagged toolchain.
+
 ## 0.3.91 - 2026-08-02
 
 - Refresh the pawnserver support record to v0.7.2.
