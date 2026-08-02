@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.75 - 2026-08-02
+
+### Changed
+
+- Refresh the Pawntest support record to v1.2.9.
+
 ## 0.3.74 - 2026-08-02
 
 ### Changed
