@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.83 - 2026-08-02
+
+- Refresh the pawnlsp support record to v0.34.7.
+
 ## 0.3.82 - 2026-08-02
 
 - Refresh the API catalog to pawn-api v0.19.4.
