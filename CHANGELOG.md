@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.65 - 2026-08-02
+
+- Refresh the pawnlsp support record to v0.33.96.
+
 ## 0.3.64 - 2026-08-02
 
 - Refresh support records for pawnlint 1.8.26, pawnlsp 0.33.95, and PawnKit
