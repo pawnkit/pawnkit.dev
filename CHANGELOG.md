@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.79 - 2026-08-02
+
+- Refresh pawnlint to 1.8.31, pawnlsp to 0.34.5, and PawnKit CLI to 1.34.14.
+
 ## 0.3.78 - 2026-08-02
 
 - Refresh support records for pawn-analysis 0.30.11, pawnlint 1.8.30,
