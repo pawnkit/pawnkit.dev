@@ -212,7 +212,7 @@
     {
       "name": "pawndebug support",
       "repository": "https://github.com/pawnkit/pawndebug",
-      "ref": "v0.2.2",
+      "ref": "v0.2.3",
       "path": "pawndebug/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -220,7 +220,7 @@
     {
       "name": "pawn-plugin-host support",
       "repository": "https://github.com/pawnkit/pawn-plugin-host",
-      "ref": "v0.1.4",
+      "ref": "v0.1.5",
       "path": "pawn-plugin-host/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
