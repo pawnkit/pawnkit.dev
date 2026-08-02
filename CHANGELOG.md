@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.74 - 2026-08-02
+
+### Changed
+
+- Refresh the Pawn Actions support record to v1.8.44.
+
 ## 0.3.73 - 2026-08-02
 
 ### Changed
