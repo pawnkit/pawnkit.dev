@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.94 - 2026-08-02
+
+- Publish the latest signed toolchain and refresh the extension and Actions
+  support records.
+
 ## 0.3.93 - 2026-08-02
 
 - Refresh the pawntest support record to v1.2.11.

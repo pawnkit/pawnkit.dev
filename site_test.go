@@ -99,7 +99,7 @@ func TestBuildAndSearchIndex(t *testing.T) {
 	)); err != nil {
 		t.Fatal(err)
 	}
-	releaseSet, err := os.ReadFile(filepath.Join("dist", "release-sets", "toolchain-signed-2026-08-02.json"))
+	releaseSet, err := os.ReadFile(filepath.Join("dist", "release-sets", "toolchain-signed-2026-08-02-2.json"))
 	if err != nil {
 		t.Fatal(err)
 	}
