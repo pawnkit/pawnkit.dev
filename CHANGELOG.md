@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.88 - 2026-08-02
+
+- Publish the August 2 signed toolchain and refresh the Actions and VS Code
+  support records.
+
 ## 0.3.87 - 2026-08-02
 
 - Refresh the pawntest support record to v1.2.10.
