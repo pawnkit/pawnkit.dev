@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.71 - 2026-08-02
+
+### Changed
+
+- Refresh the PawnKit Actions support record.
+
 ## 0.3.70 - 2026-08-02
 
 ### Changed
