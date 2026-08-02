@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.69 - 2026-08-02
+
+### Changed
+
+- Refresh the formatter, migration, language-server, and CLI support records.
+
 ## 0.3.68 - 2026-08-02
 
 ### Changed
