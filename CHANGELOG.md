@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.93 - 2026-08-02
+
+- Refresh the pawntest support record to v1.2.11.
+
 ## 0.3.92 - 2026-08-02
 
 - Refresh the compatibility records for the current tagged toolchain.
