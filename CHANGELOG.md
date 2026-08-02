@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.90 - 2026-08-02
+
+- Point the site support record at the latest published site revision.
+
 ## 0.3.89 - 2026-08-02
 
 - Refresh the VS Code extension support record to v0.18.45.
