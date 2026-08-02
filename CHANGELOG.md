@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.87 - 2026-08-02
+
+- Refresh the pawntest support record to v1.2.10.
+
 ## 0.3.86 - 2026-08-02
 
 - Refresh the VS Code extension support record to v0.18.43.
