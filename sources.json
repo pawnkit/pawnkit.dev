@@ -228,7 +228,7 @@
     {
       "name": "pawnserver support",
       "repository": "https://github.com/pawnkit/pawnserver",
-      "ref": "v0.7.0",
+      "ref": "v0.7.2",
       "path": "pawnserver/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"

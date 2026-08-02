@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.91 - 2026-08-02
+
+- Refresh the pawnserver support record to v0.7.2.
+
 ## 0.3.90 - 2026-08-02
 
 - Point the site support record at the latest published site revision.
