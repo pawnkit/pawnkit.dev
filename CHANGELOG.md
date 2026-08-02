@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.72 - 2026-08-02
+
+### Changed
+
+- Refresh the Pawntest support record after the Windows cache-lock fix.
+
 ## 0.3.71 - 2026-08-02
 
 ### Changed
