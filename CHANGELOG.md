@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.162 - 2026-08-03
+
+- Track the tree-sitter-pawn v0.1.4 support bundle.
+
 ## 0.3.161 - 2026-08-03
 
 - Track the v0.18.90 extension support bundle.
