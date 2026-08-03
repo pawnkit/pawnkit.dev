@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.148 - 2026-08-03
+
+- Track tree-sitter-pawn v0.1.3 in the support sources.
+
 ## 0.3.147 - 2026-08-03
 
 - Track pawntest v1.2.12 in the support sources.

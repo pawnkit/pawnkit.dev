@@ -172,7 +172,7 @@
     {
       "name": "tree-sitter-pawn support",
       "repository": "https://github.com/pawnkit/tree-sitter-pawn",
-      "ref": "v0.1.2",
+      "ref": "v0.1.3",
       "path": "tree-sitter-pawn/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
