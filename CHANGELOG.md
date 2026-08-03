@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.161 - 2026-08-03
+
+- Track the v0.18.90 extension support bundle.
+
 ## 0.3.160 - 2026-08-03
 
 - Track corrected signed toolchain set 41 and PawnKit Actions v1.8.78.
