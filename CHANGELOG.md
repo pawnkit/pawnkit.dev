@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.163 - 2026-08-04
+
+- Track signed toolchain set 42 and the current CLI, linter, language server,
+  Actions, specification, and support records.
+
 ## 0.3.162 - 2026-08-03
 
 - Track the tree-sitter-pawn v0.1.4 support bundle.
