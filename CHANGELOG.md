@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.110 - 2026-08-03
+
+### Changed
+
+- Publish toolchain-signed-2026-08-03-10 with pawn-analysis v0.30.19 and
+  pawnlsp v0.34.19.
+
 ## 0.3.109 - 2026-08-03
 
 ### Changed
