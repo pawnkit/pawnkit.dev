@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.108 - 2026-08-03
+
+### Changed
+
+- Publish toolchain-signed-2026-08-03-8 with the latest analysis and language
+  server releases.
+
 ## 0.3.107 - 2026-08-03
 
 ### Changed
