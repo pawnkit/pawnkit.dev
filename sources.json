@@ -164,7 +164,7 @@
     {
       "name": "vscode-pawn support",
       "repository": "https://github.com/pawnkit/vscode-pawn",
-      "ref": "v0.18.88",
+      "ref": "v0.18.89",
       "path": "vscode-pawn/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
