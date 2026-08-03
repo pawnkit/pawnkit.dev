@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.124 - 2026-08-03
+
+- Run the site support check with PawnKit Actions v1.8.57.
+
 ## 0.3.123 - 2026-08-03
 
 - Keep the site's own support source on v0.3.122.
