@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.136 - 2026-08-03
+
+- Track signed set 31 and its matching CLI, linter, language server, Actions, and VS Code releases.
+
 ## 0.3.135 - 2026-08-03
 
 - Track vscode-pawn v0.18.75 in the support sources.
