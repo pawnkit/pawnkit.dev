@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.170 - 2026-08-04
+
+- Track signed toolchain set 46 and the updated Actions and VS Code releases.
+
 ## 0.3.169 - 2026-08-04
 
 - Track corrected signed toolchain set 45 and the updated extension and
