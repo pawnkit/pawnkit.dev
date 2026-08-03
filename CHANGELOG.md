@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.97 - 2026-08-03
+
+- Publish the August 3 toolchain set and refresh support records.
+
 ## 0.3.96 - 2026-08-02
 
 - Refresh the site's own support record to the previous published revision.
