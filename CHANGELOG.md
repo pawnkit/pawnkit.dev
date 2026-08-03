@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.123 - 2026-08-03
+
+- Keep the site's own support source on v0.3.122.
+
 ## 0.3.122 - 2026-08-03
 
 - Keep the public VS Code support source on v0.18.64.
