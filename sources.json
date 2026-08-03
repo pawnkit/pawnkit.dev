@@ -116,7 +116,7 @@
     {
       "name": "pawnlsp support",
       "repository": "https://github.com/pawnkit/pawnlsp",
-      "ref": "v0.34.38",
+      "ref": "v0.34.39",
       "path": "pawnlsp/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -156,7 +156,7 @@
     {
       "name": "pawnkit-cli support",
       "repository": "https://github.com/pawnkit/pawnkit-cli",
-      "ref": "v1.34.30",
+      "ref": "v1.34.31",
       "path": "pawnkit-cli/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -228,7 +228,7 @@
     {
       "name": "pawnserver support",
       "repository": "https://github.com/pawnkit/pawnserver",
-      "ref": "v0.7.2",
+      "ref": "v0.7.4",
       "path": "pawnserver/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"

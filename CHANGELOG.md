@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.150 - 2026-08-03
+
+- Track the latest PawnKit CLI, language server, and server support releases.
+
 ## 0.3.149 - 2026-08-03
 
 - Track signed toolchain set 36 and its CLI, language server, test runner, and
