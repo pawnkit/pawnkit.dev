@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.165 - 2026-08-04
+
+- Track vscode-pawn v0.18.91 with signed set 43's managed tool versions.
+
 ## 0.3.164 - 2026-08-04
 
 - Track signed toolchain set 43 and its updated CLI, linter, and language
