@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.125 - 2026-08-03
+
+- Publish the corrected signed toolchain set 19.
+
 ## 0.3.124 - 2026-08-03
 
 - Run the site support check with PawnKit Actions v1.8.57.

@@ -69,8 +69,8 @@ func TestBuildAndSearchIndex(t *testing.T) {
 	assertContains(t, "dist/support.html", "/raw/support/pawn-parser/v1.5.11/support.json")
 	assertContains(t, "dist/search.html", `aria-live="polite"`)
 	assertContains(t, "dist/reference/rule/missing-include.html", "Raw file")
-	assertContains(t, "dist/guides/compatibility-report.html", "toolchain-signed-2026-08-03-18.json")
-	assertContains(t, "dist/guides/compatibility-report.html", "actions/runs/30801294279")
+	assertContains(t, "dist/guides/compatibility-report.html", "toolchain-signed-2026-08-03-19.json")
+	assertContains(t, "dist/guides/compatibility-report.html", "actions/runs/30805203050")
 
 	if _, err := os.Stat(filepath.Join("dist", "raw", "rule", "v1.8.42", "missing-include.md")); err != nil {
 		t.Fatal(err)
@@ -101,7 +101,7 @@ func TestBuildAndSearchIndex(t *testing.T) {
 	)); err != nil {
 		t.Fatal(err)
 	}
-	releaseSet, err := os.ReadFile(filepath.Join("dist", "release-sets", "toolchain-signed-2026-08-03-18.json"))
+	releaseSet, err := os.ReadFile(filepath.Join("dist", "release-sets", "toolchain-signed-2026-08-03-19.json"))
 	if err != nil {
 		t.Fatal(err)
 	}
