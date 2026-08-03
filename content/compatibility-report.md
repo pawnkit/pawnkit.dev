@@ -9,12 +9,12 @@ macOS. It is the current set used by PawnKit Actions and editor tooling.
 | --- | --- |
 | PawnKit CLI | 1.34.26 |
 | Pawn formatter | 1.4.10 |
-| Pawn linter | 1.8.44 |
-| Pawn language server | 0.34.27 |
+| Pawn linter | 1.8.45 |
+| Pawn language server | 0.34.28 |
 | Pawn test runner | 1.2.11 |
 
 The exact commits, release archives, sizes, and SHA-256 hashes are in the
-[release set](/release-sets/toolchain-signed-2026-08-03-21.json).
+[release set](/release-sets/toolchain-signed-2026-08-03-22.json).
 
 ## What passed
 
@@ -26,7 +26,7 @@ and exercised the packaged run adapter.
 The compiler-backed build used Pawn 3.10.10 on Linux. The run check used the
 published adapter protocol fixture; it did not start a live open.mp server.
 
-See the [successful smoke and verification run](https://github.com/pawnkit/pawn-actions/actions/runs/30809862844)
+See the [successful smoke and verification run](https://github.com/pawnkit/pawn-actions/actions/runs/30811326442)
 for the recorded jobs and supply-chain checks.
 
 ## Known limits
