@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.152 - 2026-08-03
+
+- Track signed toolchain set 38 with the latest CLI, linter, language server,
+  analysis module, and Actions release.
+
 ## 0.3.151 - 2026-08-03
 
 - Track signed toolchain set 37 with the latest CLI, linter, language server,
