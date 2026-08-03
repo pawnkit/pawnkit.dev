@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.168 - 2026-08-04
+
+- Track signed toolchain set 44, pawnlsp v0.34.47, and vscode-pawn v0.18.93.
+
 ## 0.3.167 - 2026-08-04
 
 - Track vscode-pawn v0.18.92 with the inactive-code highlighting fix.
