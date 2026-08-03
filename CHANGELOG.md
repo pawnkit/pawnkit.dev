@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.149 - 2026-08-03
+
+- Track signed toolchain set 36 and its CLI, language server, test runner, and
+  Actions releases.
+
 ## 0.3.148 - 2026-08-03
 
 - Track tree-sitter-pawn v0.1.3 in the support sources.
