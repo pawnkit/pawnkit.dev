@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.104 - 2026-08-03
+
+- Publish the signed August 3 toolchain with pawnlsp 0.34.13.
+
 ## 0.3.103 - 2026-08-03
 
 - Add a build check that keeps the public compatibility report tied to its
