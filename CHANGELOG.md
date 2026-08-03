@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.106 - 2026-08-03
+
+### Changed
+
+- Publish the toolchain-signed-2026-08-03-6 compatibility set with the latest
+  CLI, linter, and language server releases.
+
 ## 0.3.105 - 2026-08-03
 
 - Publish the signed August 3 toolchain with pawn-analysis 0.30.15 and
