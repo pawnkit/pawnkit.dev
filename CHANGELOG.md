@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.164 - 2026-08-04
+
+- Track signed toolchain set 43 and its updated CLI, linter, and language
+  server releases.
+
 ## 0.3.163 - 2026-08-04
 
 - Track signed toolchain set 42 and the current CLI, linter, language server,
