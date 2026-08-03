@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.169 - 2026-08-04
+
+- Track corrected signed toolchain set 45 and the updated extension and
+  Actions releases.
+
 ## 0.3.168 - 2026-08-04
 
 - Track signed toolchain set 44, pawnlsp v0.34.47, and vscode-pawn v0.18.93.
