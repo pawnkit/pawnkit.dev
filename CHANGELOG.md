@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.116 - 2026-08-03
+
+### Fixed
+
+- Keep every pawnkit-spec source on the same release pin.
+
 ## 0.3.115 - 2026-08-03
 
 ### Changed
