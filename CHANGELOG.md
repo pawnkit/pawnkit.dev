@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.167 - 2026-08-04
+
+- Track vscode-pawn v0.18.92 with the inactive-code highlighting fix.
+
 ## 0.3.166 - 2026-08-04
 
 - Refresh the site's own support record alongside the current toolchain set.
