@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.113 - 2026-08-03
+
+### Changed
+
+- Publish toolchain-signed-2026-08-03-12 with pawnlint v1.8.39,
+  pawnlsp v0.34.21, and PawnKit CLI v1.34.22.
+
 ## 0.3.112 - 2026-08-03
 
 ### Changed
