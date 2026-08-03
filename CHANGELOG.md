@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.118 - 2026-08-03
+
+### Changed
+
+- Publish toolchain-signed-2026-08-03-15 with pawnlint v1.8.42.
+
 ## 0.3.117 - 2026-08-03
 
 ### Fixed
