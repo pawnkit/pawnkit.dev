@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.160 - 2026-08-03
+
+- Track corrected signed toolchain set 41 and PawnKit Actions v1.8.78.
+
 ## 0.3.159 - 2026-08-03
 
 - Track vscode-pawn v0.18.89 with signed toolchain set 40 defaults.
