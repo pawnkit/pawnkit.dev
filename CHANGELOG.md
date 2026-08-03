@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.126 - 2026-08-03
+
+- Publish signed toolchain set 20 with the incremental editor cache releases.
+
 ## 0.3.125 - 2026-08-03
 
 - Publish the corrected signed toolchain set 19.
