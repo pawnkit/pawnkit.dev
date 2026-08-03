@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.145 - 2026-08-03
+
+- Track PawnKit Actions v1.8.72 in the support sources.
+
 ## 0.3.144 - 2026-08-03
 
 - Track the corrected `pawnserver v0.7.2` release set from `pawnkit-spec`.
