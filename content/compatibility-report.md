@@ -14,7 +14,7 @@ macOS. It is the current set used by PawnKit Actions and editor tooling.
 | Pawn test runner | 1.2.11 |
 
 The exact commits, release archives, sizes, and SHA-256 hashes are in the
-[release set](/release-sets/toolchain-signed-2026-08-03-23.json).
+[release set](/release-sets/toolchain-signed-2026-08-03-24.json).
 
 ## What passed
 
