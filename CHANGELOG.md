@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.107 - 2026-08-03
+
+### Changed
+
+- Publish toolchain-signed-2026-08-03-7 with the latest CLI, formatter, linter,
+  and language server releases.
+
 ## 0.3.106 - 2026-08-03
 
 ### Changed
