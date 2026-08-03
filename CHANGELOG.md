@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.141 - 2026-08-03
+
+- Track vscode-pawn v0.18.81 in the support sources.
+
 ## 0.3.140 - 2026-08-03
 
 - Track vscode-pawn v0.18.80 in the support sources.
