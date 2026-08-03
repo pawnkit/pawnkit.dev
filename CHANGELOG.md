@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.133 - 2026-08-03
+
+- Use corrected signed toolchain set 29 with pawnlint 1.8.49, pawnlsp 0.34.32,
+  PawnKit Actions 1.8.65, and VS Code support 0.18.73.
+
 ## 0.3.132 - 2026-08-03
 
 - Use signed toolchain set 27 with pawnlint 1.8.48 and pawnlsp 0.34.31.
