@@ -69,6 +69,9 @@ func TestBuildAndSearchIndex(t *testing.T) {
 	assertContains(t, "dist/support.html", "/raw/support/pawn-parser/v1.5.10/support.json")
 	assertContains(t, "dist/search.html", `aria-live="polite"`)
 	assertContains(t, "dist/reference/rule/missing-include.html", "Raw file")
+	assertContains(t, "dist/guides/compatibility-report.html", "toolchain-signed-2026-08-03-3.json")
+	assertContains(t, "dist/guides/compatibility-report.html", "actions/runs/30777713865")
+	assertContains(t, "dist/guides/compatibility-report.html", "actions/runs/30778012063")
 
 	if _, err := os.Stat(filepath.Join("dist", "raw", "rule", "v1.8.36", "missing-include.md")); err != nil {
 		t.Fatal(err)

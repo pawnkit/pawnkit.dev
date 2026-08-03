@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.3.103 - 2026-08-03
+
+- Add a build check that keeps the public compatibility report tied to its
+  signed release set and verification runs.
+
+## 0.3.102 - 2026-08-03
+
+- Link the compatibility report to the signed smoke and full verification
+  runs.
+
+## 0.3.101 - 2026-08-03
+
+- Refresh the public compatibility report for the August 3 signed set.
+
 ## 0.3.100 - 2026-08-03
 
 - Run the support check with Pawn Actions v1.8.54.
