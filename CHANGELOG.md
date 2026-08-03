@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.98 - 2026-08-03
+
+- Publish the signed August 3 toolchain set with pawnlsp 0.34.11.
+
 ## 0.3.97 - 2026-08-03
 
 - Publish the August 3 toolchain set and refresh support records.
