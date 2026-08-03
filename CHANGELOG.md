@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.127 - 2026-08-03
+
+- Publish signed toolchain set 21 with pawnlint 1.8.44 and pawnlsp 0.34.27.
+
 ## 0.3.126 - 2026-08-03
 
 - Publish signed toolchain set 20 with the incremental editor cache releases.
