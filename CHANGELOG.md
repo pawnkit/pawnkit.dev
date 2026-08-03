@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.147 - 2026-08-03
+
+- Track pawntest v1.2.12 in the support sources.
+
 ## 0.3.146 - 2026-08-03
 
 - Track vscode-pawn v0.18.84 in the support sources.
