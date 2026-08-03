@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.156 - 2026-08-03
+
+- Keep the compatibility report and site checks aligned with signed set 39.
+
 ## 0.3.155 - 2026-08-03
 
 - Track vscode-pawn v0.18.87 with signed toolchain set 39 defaults.
