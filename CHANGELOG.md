@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.122 - 2026-08-03
+
+- Keep the public VS Code support source on v0.18.64.
+
 ## 0.3.121 - 2026-08-03
 
 - Publish signed set 18 with pawnkit-cli v1.34.26 and pawnlsp v0.34.25.
