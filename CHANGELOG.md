@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.99 - 2026-08-03
+
+- Publish the signed August 3 toolchain set with the latest CLI, formatter,
+  linter, language server, Actions, and extension releases.
+
 ## 0.3.98 - 2026-08-03
 
 - Publish the signed August 3 toolchain set with pawnlsp 0.34.11.
