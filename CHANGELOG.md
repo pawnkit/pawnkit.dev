@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.157 - 2026-08-03
+
+- Track vscode-pawn v0.18.88 with its dependency audit fixes.
+
 ## 0.3.156 - 2026-08-03
 
 - Keep the compatibility report and site checks aligned with signed set 39.
