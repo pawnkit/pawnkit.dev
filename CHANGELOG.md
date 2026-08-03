@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.155 - 2026-08-03
+
+- Track vscode-pawn v0.18.87 with signed toolchain set 39 defaults.
+
+## 0.3.154 - 2026-08-03
+
+- Track signed toolchain set 39 with the latest CLI, linter, language server,
+  analysis module, and Actions release.
+
 ## 0.3.153 - 2026-08-03
 
 - Track vscode-pawn v0.18.86 and its signed toolchain set 38 defaults.
