@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.139 - 2026-08-03
+
+- Track signed set 35 and its matching language server, Actions, and VS Code
+  releases.
+
 ## 0.3.138 - 2026-08-03
 
 - Track signed set 33 and its matching CLI, linter, language server, Actions,
