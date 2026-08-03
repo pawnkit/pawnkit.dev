@@ -3,7 +3,7 @@
     {
       "name": "pawnkit-spec schemas",
       "repository": "https://github.com/pawnkit/pawnkit-spec",
-      "ref": "v0.1.105",
+      "ref": "v0.1.106",
       "path": "pawnkit-spec/schemas",
       "source_path": "schemas",
       "kind": "schema"
@@ -11,7 +11,7 @@
     {
       "name": "pawnkit-spec RFCs",
       "repository": "https://github.com/pawnkit/pawnkit-spec",
-      "ref": "v0.1.105",
+      "ref": "v0.1.106",
       "path": "pawnkit-spec/rfcs",
       "source_path": "rfcs",
       "kind": "rfc"
@@ -19,16 +19,16 @@
     {
       "name": "PawnKit tested release sets",
       "repository": "https://github.com/pawnkit/pawnkit-spec",
-      "ref": "v0.1.105",
+      "ref": "v0.1.106",
       "path": "pawnkit-spec/release-sets",
       "source_path": "release-sets",
       "kind": "release-set",
-      "latest": "toolchain-signed-2026-08-03-4.json"
+      "latest": "toolchain-signed-2026-08-03-5.json"
     },
     {
       "name": "PawnKit compiler indexes",
       "repository": "https://github.com/pawnkit/pawnkit-spec",
-      "ref": "v0.1.105",
+      "ref": "v0.1.106",
       "path": "pawnkit-spec/compiler-indexes",
       "source_path": "compiler-indexes",
       "kind": "compiler-index"
@@ -36,7 +36,7 @@
     {
       "name": "PawnKit runtime indexes",
       "repository": "https://github.com/pawnkit/pawnkit-spec",
-      "ref": "v0.1.105",
+      "ref": "v0.1.106",
       "path": "pawnkit-spec/runtime-indexes",
       "source_path": "runtime-indexes",
       "kind": "runtime-index"
@@ -76,7 +76,7 @@
     {
       "name": "pawn-analysis support",
       "repository": "https://github.com/pawnkit/pawn-analysis",
-      "ref": "v0.30.14",
+      "ref": "v0.30.15",
       "path": "pawn-analysis/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -116,7 +116,7 @@
     {
       "name": "pawnlsp support",
       "repository": "https://github.com/pawnkit/pawnlsp",
-      "ref": "v0.34.13",
+      "ref": "v0.34.14",
       "path": "pawnlsp/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"
@@ -188,7 +188,7 @@
     {
       "name": "pawnkit-spec support",
       "repository": "https://github.com/pawnkit/pawnkit-spec",
-      "ref": "v0.1.105",
+      "ref": "v0.1.106",
       "path": "pawnkit-spec/.pawnkit",
       "source_path": ".pawnkit",
       "kind": "support"

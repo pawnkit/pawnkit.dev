@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.105 - 2026-08-03
+
+- Publish the signed August 3 toolchain with pawn-analysis 0.30.15 and
+  pawnlsp 0.34.14.
+
 ## 0.3.104 - 2026-08-03
 
 - Publish the signed August 3 toolchain with pawnlsp 0.34.13.
