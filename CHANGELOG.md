@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.166 - 2026-08-04
+
+- Refresh the site's own support record alongside the current toolchain set.
+
 ## 0.3.165 - 2026-08-04
 
 - Track vscode-pawn v0.18.91 with signed set 43's managed tool versions.
