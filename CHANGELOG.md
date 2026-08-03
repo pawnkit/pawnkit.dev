@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.117 - 2026-08-03
+
+### Fixed
+
+- Keep the VS Code support source on the current extension release.
+
 ## 0.3.116 - 2026-08-03
 
 ### Fixed
