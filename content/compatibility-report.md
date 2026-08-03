@@ -26,8 +26,9 @@ and exercised the packaged run adapter.
 The compiler-backed build used Pawn 3.10.10 on Linux. The run check used the
 published adapter protocol fixture; it did not start a live open.mp server.
 
-See the [successful Actions run](https://github.com/pawnkit/pawn-actions/actions/runs/30777713865)
-for the recorded jobs.
+See the [successful smoke run](https://github.com/pawnkit/pawn-actions/actions/runs/30777713865)
+and the [full release-set verification run](https://github.com/pawnkit/pawn-actions/actions/runs/30778012063)
+for the recorded jobs and supply-chain checks.
 
 ## Known limits
 
